@@ -3,388 +3,1596 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Clean Warks – Premier Cleaning Services in Kochi, Kottayam & Bangalore</title>
+<title>Clean Warks – Professional Cleaning Services in Kerala & Bangalore</title>
 <meta name="description" content="Professional cleaning services across Kochi, Kottayam, Pathanamthitta, Alappuzha and Bangalore. House cleaning, deep cleaning, sofa, bathroom, kitchen, water tank & more. Call 8304000046 (Kerala) | 7034455665 (Bangalore).">
 <link rel="canonical" href="https://cleanwarks.com/">
-<meta property="og:title" content="Clean Warks – Premier Cleaning Services in Kochi, Kottayam & Bangalore">
-<meta property="og:description" content="Professional cleaning services across Kerala and Bangalore. Trusted since 2020 with 5,000+ happy clients.">
+<meta property="og:title" content="Clean Warks – Professional Cleaning Services Kerala & Bangalore">
+<meta property="og:description" content="Trusted cleaning services across Kerala and Bangalore since 2020. 5,000+ happy clients.">
 <meta property="og:image" content="https://cleanwarks.com/wp-content/uploads/2024/03/Clean-Warks-Logo-no-back-1.png">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://cleanwarks.com/">
 <link rel="icon" href="https://cleanwarks.com/wp-content/uploads/2024/03/cropped-Clean-Warks-Logo-no-back-1.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,700;1,800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/shared.css">
+<style>
+/* =============================================
+   CLEAN WARKS — HOMEPAGE (Cleanora-exact design)
+   ============================================= */
+
+/* ---- HERO ---- */
+.hero-cln {
+  position: relative;
+  height: 92vh;
+  min-height: 560px;
+  overflow: visible;
+  background: #111;
+}
+
+.hero-cln-bg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.hero-cln-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+/* ---- FLOATING NAV (inside hero) ---- */
+.hero-nav-wrap {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  padding: 0 20px;
+}
+
+.hero-nav {
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px 10px 24px;
+  max-width: 1160px;
+  margin: 0 auto;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+
+.hero-nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.hero-nav-logo img {
+  height: 38px;
+  width: auto;
+}
+
+.hero-nav-logo-text {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  color: #111;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.hero-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.hero-nav-links a {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.hero-nav-links a:hover,
+.hero-nav-links a.active {
+  color: #111;
+}
+
+.hero-nav-ctas {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero-nav-btn {
+  background: #EFC93D;
+  color: #111;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  padding: 11px 24px;
+  border-radius: 100px;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+  white-space: nowrap;
+}
+
+.hero-nav-btn:hover {
+  background: #DDB82E;
+  color: #111;
+  transform: translateY(-1px);
+}
+
+.hero-nav-toggle {
+  display: none;
+  width: 40px;
+  height: 40px;
+  background: #f0f0f0;
+  border: none;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.hero-nav-toggle svg {
+  width: 20px;
+  height: 20px;
+  color: #111;
+}
+
+/* ---- HERO GRADIENT CARD ---- */
+.hero-card-cln {
+  position: absolute;
+  top: 100px;
+  left: calc((100% - 1160px) / 2 + 20px);
+  width: clamp(280px, 36vw, 500px);
+  background: linear-gradient(135deg, rgba(252,252,230,0.92) 0%, #EFC93D 48%, #22C55E 100%);
+  border-radius: 20px;
+  padding: clamp(28px, 4vw, 44px) clamp(28px, 4vw, 44px);
+  z-index: 10;
+}
+
+@media (max-width: 1200px) {
+  .hero-card-cln {
+    left: 40px;
+  }
+}
+
+.hero-card-cln h1 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: clamp(1.625rem, 3vw, 2.375rem);
+  font-weight: 800;
+  color: #111;
+  line-height: 1.18;
+  letter-spacing: -0.025em;
+  margin-bottom: 20px;
+}
+
+.hero-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: #111;
+  text-decoration: none;
+  border-bottom: 1.5px solid rgba(0,0,0,0.4);
+  padding-bottom: 2px;
+  transition: gap 0.2s;
+}
+
+.hero-card-link:hover {
+  gap: 16px;
+  color: #111;
+}
+
+/* ---- GIANT WORDMARK ---- */
+.hero-wordmark {
+  position: absolute;
+  bottom: -0.05em;
+  left: 0;
+  right: 0;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
+  font-weight: 800;
+  font-size: clamp(72px, 13vw, 175px);
+  color: rgba(255, 255, 255, 0.88);
+  line-height: 1;
+  text-align: center;
+  pointer-events: none;
+  white-space: nowrap;
+  letter-spacing: -0.02em;
+  z-index: 5;
+}
+
+/* ---- ABOUT SECTION ---- */
+.about-cln {
+  background: #F5F5EE;
+  padding: clamp(60px, 8vw, 100px) 24px;
+}
+
+.about-cln-grid {
+  max-width: 1160px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(40px, 7vw, 100px);
+  align-items: center;
+}
+
+.about-cln-meta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #555;
+  text-decoration: none;
+  margin-bottom: 20px;
+  transition: color 0.2s;
+}
+
+.about-cln-meta:hover { color: #111; }
+.about-cln-meta svg { width: 14px; height: 14px; }
+
+.about-cln-text h2 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+  font-weight: 800;
+  color: #111;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  margin-bottom: 20px;
+}
+
+.about-cln-text p {
+  font-size: 0.9375rem;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+.checklist-cln {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 36px;
+}
+
+.checklist-cln li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.9375rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.checklist-cln li::before {
+  content: '';
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #22C55E;
+  flex-shrink: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+  background-size: 13px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.btn-cln-yellow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #EFC93D;
+  color: #111;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  padding: 14px 30px;
+  border-radius: 100px;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.btn-cln-yellow:hover {
+  background: #DDB82E;
+  color: #111;
+  transform: translateY(-2px);
+}
+
+.about-cln-img-wrap {
+  position: relative;
+}
+
+.about-cln-img-wrap img {
+  width: 100%;
+  height: clamp(380px, 45vw, 580px);
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
+}
+
+.trust-badge-cln {
+  position: absolute;
+  bottom: 24px;
+  left: -24px;
+  background: white;
+  border-radius: 16px;
+  padding: 16px 20px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+  min-width: 220px;
+}
+
+.trust-badge-cln p {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.trust-avatars-cln {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin-bottom: 4px;
+}
+
+.trust-avatars-cln .av {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-right: -8px;
+  object-fit: cover;
+  background: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #555;
+  overflow: hidden;
+}
+
+.trust-count-cln {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.trust-count-num {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #111;
+  line-height: 1;
+}
+
+.trust-count-label {
+  font-size: 0.8125rem;
+  color: #555;
+  line-height: 1.3;
+}
+
+/* ---- STATS BAR ---- */
+.stats-cln {
+  background: #fff;
+  border-top: 1px solid #E8E8E0;
+  border-bottom: 1px solid #E8E8E0;
+  padding: 44px 24px;
+}
+
+.stats-cln-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr 1px 1fr 1px 1fr;
+  align-items: center;
+  gap: 0;
+}
+
+.stat-cln {
+  text-align: center;
+  padding: 8px 20px;
+}
+
+.stat-sep-cln {
+  width: 1px;
+  height: 56px;
+  background: #DDDDD5;
+}
+
+.stat-cln-num {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: clamp(1.625rem, 3.5vw, 2.25rem);
+  font-weight: 800;
+  color: #111;
+  line-height: 1;
+  margin-bottom: 6px;
+  letter-spacing: -0.02em;
+}
+
+.stat-cln-label {
+  font-size: 0.8125rem;
+  color: #777;
+  font-weight: 500;
+}
+
+/* ---- SERVICES ---- */
+.services-cln {
+  background: #fff;
+  padding: clamp(60px, 8vw, 100px) 24px;
+}
+
+.services-cln-inner {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.services-cln-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.services-cln-head-text span {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #22C55E;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.services-cln-head-text h2 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: clamp(1.625rem, 3vw, 2.25rem);
+  font-weight: 800;
+  color: #111;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.services-cln-head-text p {
+  font-size: 0.9375rem;
+  color: #666;
+  max-width: 420px;
+}
+
+.services-view-all {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: #111;
+  text-decoration: none;
+  white-space: nowrap;
+  border-bottom: 1.5px solid #111;
+  padding-bottom: 2px;
+  flex-shrink: 0;
+  transition: gap 0.2s;
+}
+
+.services-view-all:hover { gap: 14px; color: #111; }
+.services-view-all svg { width: 16px; height: 16px; }
+
+.services-cln-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.svc-cln-card {
+  background: #fff;
+  border: 1px solid #EAEAE4;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: box-shadow 0.25s, transform 0.25s;
+}
+
+.svc-cln-card:hover {
+  box-shadow: 0 16px 48px rgba(0,0,0,0.10);
+  transform: translateY(-4px);
+}
+
+.svc-cln-img {
+  position: relative;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+}
+
+.svc-cln-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.svc-cln-card:hover .svc-cln-img img {
+  transform: scale(1.05);
+}
+
+.svc-cln-body {
+  padding: 20px 22px 22px;
+}
+
+.svc-cln-body h3 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 8px;
+  letter-spacing: -0.01em;
+}
+
+.svc-cln-body p {
+  font-size: 0.875rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.svc-cln-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #EFC93D;
+  color: #111;
+  font-size: 0.875rem;
+  font-weight: 700;
+  padding: 9px 18px;
+  border-radius: 100px;
+  text-decoration: none;
+  transition: background 0.2s, gap 0.2s;
+}
+
+.svc-cln-cta:hover {
+  background: #DDB82E;
+  color: #111;
+  gap: 12px;
+}
+
+.svc-cln-cta svg { width: 14px; height: 14px; }
+
+/* ---- PROCESS ---- */
+.process-cln {
+  background: #F5F5EE;
+  padding: clamp(60px, 8vw, 100px) 24px;
+}
+
+.process-cln-inner {
+  max-width: 1160px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(48px, 7vw, 96px);
+  align-items: center;
+}
+
+.process-cln-eyebrow {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #22C55E;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.process-cln h2 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: clamp(1.625rem, 3vw, 2.25rem);
+  font-weight: 800;
+  color: #111;
+  letter-spacing: -0.025em;
+  margin-bottom: 14px;
+}
+
+.process-cln > div:first-child > p {
+  font-size: 0.9375rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.process-steps-cln {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.process-step-cln {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.process-step-num {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #111;
+  color: #EFC93D;
+  font-size: 1rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.process-step-cln h4 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 4px;
+}
+
+.process-step-cln p {
+  font-size: 0.875rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.process-step-cln .btn-cln-yellow {
+  margin-top: 12px;
+}
+
+.process-cln-img {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.process-cln-img img {
+  width: 100%;
+  height: clamp(360px, 44vw, 540px);
+  object-fit: cover;
+  display: block;
+}
+
+.process-badge-cln {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  background: white;
+  border-radius: 12px;
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+.process-badge-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #EFC93D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.process-badge-icon svg { width: 20px; height: 20px; color: #111; }
+
+.process-badge-num {
+  font-size: 1.375rem;
+  font-weight: 800;
+  color: #111;
+  line-height: 1;
+}
+
+.process-badge-label {
+  font-size: 0.75rem;
+  color: #666;
+}
+
+/* ---- LOCATIONS ---- */
+.locations-cln {
+  background: #fff;
+  padding: clamp(60px, 8vw, 100px) 24px;
+}
+
+.locations-cln-inner {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.section-head-cln {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 52px;
+}
+
+.section-head-cln span {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #22C55E;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.section-head-cln h2 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: clamp(1.625rem, 3vw, 2.25rem);
+  font-weight: 800;
+  color: #111;
+  letter-spacing: -0.025em;
+  margin-bottom: 12px;
+}
+
+.section-head-cln p {
+  font-size: 0.9375rem;
+  color: #666;
+}
+
+.locations-cln-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.loc-card-cln {
+  background: #fff;
+  border: 1.5px solid #EAEAE4;
+  border-radius: 16px;
+  padding: 28px 24px;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+
+.loc-card-cln:hover {
+  border-color: #EFC93D;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+  transform: translateY(-3px);
+}
+
+.loc-card-tag {
+  display: inline-block;
+  background: #F5F5EE;
+  color: #555;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 100px;
+  margin-bottom: 14px;
+  letter-spacing: 0.04em;
+}
+
+.loc-card-cln h3 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.375rem;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.loc-card-addr {
+  font-size: 0.875rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+}
+
+.loc-card-addr svg { width: 15px; height: 15px; color: #EFC93D; flex-shrink: 0; margin-top: 3px; }
+
+.loc-card-phone {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #111;
+  text-decoration: none;
+  margin-bottom: 16px;
+}
+
+.loc-card-phone svg { width: 16px; height: 16px; color: #22C55E; }
+
+.loc-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.loc-card-tags span {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  padding: 3px 9px;
+  border-radius: 100px;
+  background: #F5F5EE;
+  color: #555;
+}
+
+.loc-card-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.loc-btn-yellow {
+  background: #EFC93D;
+  color: #111;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  padding: 9px 16px;
+  border-radius: 100px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.loc-btn-yellow:hover { background: #DDB82E; color: #111; }
+
+.loc-btn-green {
+  background: #22C55E;
+  color: white;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  padding: 9px 16px;
+  border-radius: 100px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.loc-btn-green:hover { background: #16A34A; }
+
+/* ---- TESTIMONIALS ---- */
+.testi-cln {
+  background: #F5F5EE;
+  padding: clamp(60px, 8vw, 100px) 24px;
+}
+
+.testi-cln-inner {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.testi-cln-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 48px;
+}
+
+.testi-cln-card {
+  background: white;
+  border-radius: 16px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.testi-stars-cln {
+  display: flex;
+  gap: 3px;
+}
+
+.testi-stars-cln svg {
+  width: 16px;
+  height: 16px;
+  color: #EFC93D;
+}
+
+.testi-quote-cln {
+  font-size: 0.9375rem;
+  color: #333;
+  line-height: 1.7;
+  flex: 1;
+}
+
+.testi-author-cln {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-top: 16px;
+  border-top: 1px solid #EAEAE4;
+}
+
+.testi-av {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1rem;
+  color: white;
+  flex-shrink: 0;
+}
+
+.testi-av.av-y { background: #EFC93D; color: #111; }
+.testi-av.av-g { background: #22C55E; }
+.testi-av.av-b { background: #3B82F6; }
+
+.testi-author-name {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.testi-author-loc {
+  font-size: 0.8125rem;
+  color: #888;
+}
+
+/* ---- CTA BANNER ---- */
+.cta-cln {
+  background: #111;
+  padding: clamp(60px, 8vw, 96px) 24px;
+}
+
+.cta-cln-inner {
+  max-width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.cta-cln h2 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: clamp(1.625rem, 3vw, 2.25rem);
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -0.025em;
+  margin-bottom: 8px;
+}
+
+.cta-cln p {
+  font-size: 0.9375rem;
+  color: #aaa;
+  max-width: 480px;
+}
+
+.cta-cln-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+
+.cta-btn-yellow {
+  background: #EFC93D;
+  color: #111;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  padding: 14px 28px;
+  border-radius: 100px;
+  text-decoration: none;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.cta-btn-yellow:hover { background: #DDB82E; color: #111; }
+
+.cta-btn-outline {
+  background: transparent;
+  color: #ccc;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  padding: 14px 28px;
+  border-radius: 100px;
+  text-decoration: none;
+  border: 1.5px solid #444;
+  transition: border-color 0.2s, color 0.2s;
+  white-space: nowrap;
+}
+
+.cta-btn-outline:hover { border-color: #888; color: #fff; }
+
+/* ---- BLOG PREVIEW ---- */
+.blog-cln {
+  background: #fff;
+  padding: clamp(60px, 8vw, 100px) 24px;
+}
+
+.blog-cln-inner {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.blog-cln-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.blog-cln-card {
+  border: 1px solid #EAEAE4;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: box-shadow 0.25s, transform 0.25s;
+}
+
+.blog-cln-card:hover {
+  box-shadow: 0 12px 40px rgba(0,0,0,0.09);
+  transform: translateY(-4px);
+}
+
+.blog-cln-img {
+  aspect-ratio: 16/11;
+  overflow: hidden;
+}
+
+.blog-cln-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+
+.blog-cln-card:hover .blog-cln-img img { transform: scale(1.05); }
+
+.blog-cln-body {
+  padding: 20px 22px 22px;
+}
+
+.blog-cln-meta {
+  display: flex;
+  gap: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.blog-cln-meta span:first-child { color: #22C55E; }
+
+.blog-cln-body h3 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.blog-cln-body p {
+  font-size: 0.875rem;
+  color: #666;
+  line-height: 1.65;
+  margin-bottom: 16px;
+}
+
+.blog-cln-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #111;
+  text-decoration: none;
+  border-bottom: 1.5px solid #111;
+  padding-bottom: 1px;
+  transition: gap 0.2s;
+}
+
+.blog-cln-link:hover { gap: 10px; }
+.blog-cln-link svg { width: 13px; height: 13px; }
+
+/* ---- FOOTER ---- */
+.footer-cln {
+  background: #111;
+  color: #999;
+  padding: clamp(60px, 8vw, 96px) 24px 32px;
+}
+
+.footer-cln-inner {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.footer-cln-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr 1fr;
+  gap: 48px;
+  margin-bottom: 56px;
+}
+
+.footer-cln-brand img {
+  height: 44px;
+  width: auto;
+  filter: brightness(0) invert(1);
+  margin-bottom: 16px;
+  display: block;
+}
+
+.footer-cln-brand p {
+  font-size: 0.875rem;
+  color: #888;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  max-width: 280px;
+}
+
+.footer-cln-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-cln-contact a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.875rem;
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-cln-contact a:hover { color: #EFC93D; }
+.footer-cln-contact a svg { width: 15px; height: 15px; color: #EFC93D; flex-shrink: 0; }
+
+.footer-cln-col h4 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 16px;
+}
+
+.footer-cln-col ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-cln-col ul a {
+  font-size: 0.875rem;
+  color: #888;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-cln-col ul a:hover { color: #EFC93D; }
+
+.footer-cln-bottom {
+  border-top: 1px solid #222;
+  padding-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.footer-cln-bottom p {
+  font-size: 0.8125rem;
+  color: #555;
+}
+
+.footer-cln-bottom-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-cln-bottom-links a {
+  font-size: 0.8125rem;
+  color: #666;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-cln-bottom-links a:hover { color: #EFC93D; }
+
+/* ---- FLOATING WHATSAPP ---- */
+.float-wa-cln {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 58px;
+  height: 58px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  z-index: 90;
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
+  transition: transform 0.2s;
+}
+
+.float-wa-cln:hover { transform: scale(1.08); }
+.float-wa-cln svg { width: 28px; height: 28px; }
+
+/* ---- MOBILE MENU ---- */
+.mobile-menu-cln {
+  position: fixed;
+  inset: 0;
+  background: white;
+  z-index: 200;
+  padding: 24px;
+  transform: translateX(100%);
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.mobile-menu-cln.open { transform: translateX(0); }
+
+.mobile-menu-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.mobile-menu-close {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: #f0f0f0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.mobile-menu-links {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 32px;
+}
+
+.mobile-menu-links a {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111;
+  text-decoration: none;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.mobile-menu-ctas {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: auto;
+}
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 1024px) {
+  .hero-nav-links { display: none; }
+  .hero-nav-toggle { display: flex; }
+  .about-cln-grid { grid-template-columns: 1fr; gap: 48px; }
+  .trust-badge-cln { left: 0; bottom: -24px; }
+  .about-cln-img-wrap { margin-bottom: 40px; }
+  .services-cln-grid { grid-template-columns: repeat(2, 1fr); }
+  .process-cln-inner { grid-template-columns: 1fr; }
+  .locations-cln-grid { grid-template-columns: 1fr; }
+  .testi-cln-grid { grid-template-columns: 1fr; }
+  .blog-cln-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer-cln-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .footer-cln-brand { grid-column: span 2; }
+}
+
+@media (max-width: 768px) {
+  .hero-cln { height: 80vh; min-height: 520px; }
+  .hero-card-cln { left: 20px; right: 20px; width: auto; top: 90px; }
+  .hero-wordmark { font-size: clamp(52px, 15vw, 100px); }
+  .stats-cln-inner { grid-template-columns: 1fr 1px 1fr; }
+  .stat-sep-cln:nth-child(4) { display: none; }
+  .stat-cln:nth-child(5),
+  .stat-cln:nth-child(6),
+  .stat-cln:nth-child(7) { /* shift layout */ }
+  .services-cln-head { flex-direction: column; align-items: flex-start; }
+  .cta-cln-inner { flex-direction: column; }
+  .blog-cln-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 540px) {
+  .services-cln-grid { grid-template-columns: 1fr; }
+  .stats-cln-inner { grid-template-columns: 1fr 1px 1fr; }
+  .footer-cln-grid { grid-template-columns: 1fr; }
+  .footer-cln-brand { grid-column: span 1; }
+}
+
+/* ---- SCROLL ANIMATIONS ---- */
+.fade-up {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.3s; }
+</style>
 </head>
 <body>
 
-<!-- TOP BAR -->
-<div class="topbar">
-  <div class="container topbar-inner">
-    <div class="topbar-left">
-      <a href="tel:+918304000046" class="topbar-item">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-        <span class="topbar-label">Kerala</span>8304000046
-      </a>
-      <a href="tel:+917034455665" class="topbar-item">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-        <span class="topbar-label">Bangalore</span>7034455665
-      </a>
-      <a href="mailto:cleanwarks@gmail.com" class="topbar-item">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-        cleanwarks@gmail.com
-      </a>
-    </div>
-    <div class="topbar-right">
-      <span class="location-pill">Kochi</span>
-      <span class="location-pill">Kottayam</span>
-      <span class="location-pill">Bangalore</span>
-    </div>
-  </div>
-</div>
+<!-- ============================================================
+     HERO SECTION (nav floats inside)
+     ============================================================ -->
+<section class="hero-cln">
 
-<!-- PILL NAVIGATION -->
-<div class="nav-pill-wrap">
-  <header class="nav-pill">
-    <a href="/" class="nav-logo">
-      <img src="https://cleanwarks.com/wp-content/uploads/2024/03/Clean-Warks-Logo-no-back-1.png" alt="Clean Warks">
-    </a>
-    <nav class="nav-links">
-      <a href="/" class="nav-link active">Home</a>
-      <a href="about-us/" class="nav-link">About</a>
-      <a href="services/" class="nav-link">Services</a>
-      <a href="blog-grid/" class="nav-link">Blog</a>
-      <a href="contact/" class="nav-link">Contact</a>
-    </nav>
-    <div class="nav-ctas">
-      <a href="https://wa.me/918304000046" class="btn btn-green btn-sm desktop-only">
-        <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.825 9.825 0 0 0 12.04 2zm5.07 14.07c-.21.59-1.04 1.08-1.69 1.22-.44.09-1.02.17-2.97-.62-2.49-1.03-4.11-3.56-4.23-3.72-.13-.16-1-1.34-1-2.55s.64-1.81.86-2.06c.22-.25.49-.31.65-.31s.32 0 .47.01c.15 0 .35-.06.55.42.21.5.71 1.71.78 1.84.06.13.1.28.02.45-.09.16-.13.27-.25.42-.13.16-.27.35-.38.47-.13.13-.26.27-.11.53.15.25.66 1.09 1.42 1.77.98.87 1.81 1.14 2.07 1.27.26.13.41.11.56-.06.16-.18.65-.76.83-1.02.18-.26.35-.21.59-.13.24.09 1.54.73 1.81.86.27.13.45.2.51.31.07.11.07.62-.14 1.21z"/></svg>
-        WhatsApp
+  <!-- Background image -->
+  <div class="hero-cln-bg">
+    <img src="https://cleanwarks.com/wp-content/uploads/2023/11/h10-top-banner1.png"
+         alt="Clean Warks professional cleaning services" loading="eager">
+  </div>
+
+  <!-- Floating nav -->
+  <div class="hero-nav-wrap">
+    <nav class="hero-nav">
+      <a href="/" class="hero-nav-logo">
+        <img src="https://cleanwarks.com/wp-content/uploads/2024/03/Clean-Warks-Logo-no-back-1.png" alt="Clean Warks">
       </a>
-      <a href="https://blrbooking.cleanwarks.com" class="btn btn-orange btn-sm">Book Now</a>
-      <button class="nav-toggle" aria-label="Open menu">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-      </button>
-    </div>
-  </header>
-</div>
+      <div class="hero-nav-links">
+        <a href="/" class="active">Home</a>
+        <a href="about-us/">About</a>
+        <a href="services/">Services</a>
+        <a href="contact/">Contact</a>
+        <a href="blog-grid/">Blog</a>
+      </div>
+      <div class="hero-nav-ctas">
+        <a href="https://wa.me/918304000046" class="hero-nav-btn" style="background:#22C55E;color:white;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="display:inline;vertical-align:middle;margin-right:5px;"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.825 9.825 0 0 0 12.04 2z"/></svg>
+          WhatsApp
+        </a>
+        <a href="https://blrbooking.cleanwarks.com" class="hero-nav-btn">Book Now</a>
+        <button class="hero-nav-toggle" aria-label="Open menu" id="navToggle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Gradient card (left side) -->
+  <div class="hero-card-cln">
+    <h1>Bringing Brilliance to Every Home</h1>
+    <a href="https://blrbooking.cleanwarks.com" class="hero-card-link">
+      Book Your Cleaning Today
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </a>
+  </div>
+
+  <!-- Giant wordmark -->
+  <div class="hero-wordmark">Clean Warks</div>
+
+</section>
 
 <!-- MOBILE MENU -->
-<div class="nav-mobile">
-  <div class="nav-mobile-head">
-    <a href="/" class="nav-logo">
-      <img src="https://cleanwarks.com/wp-content/uploads/2024/03/Clean-Warks-Logo-no-back-1.png" alt="Clean Warks">
+<div class="mobile-menu-cln" id="mobileMenu">
+  <div class="mobile-menu-head">
+    <a href="/">
+      <img src="https://cleanwarks.com/wp-content/uploads/2024/03/Clean-Warks-Logo-no-back-1.png" alt="Clean Warks" style="height:36px;">
     </a>
-    <button class="nav-mobile-close" aria-label="Close menu">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    <button class="mobile-menu-close" id="menuClose" aria-label="Close menu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
     </button>
   </div>
-  <div class="nav-mobile-links">
+  <div class="mobile-menu-links">
     <a href="/">Home</a>
     <a href="about-us/">About Us</a>
     <a href="services/">Services</a>
-    <a href="blog-grid/">Blog</a>
     <a href="contact/">Contact</a>
+    <a href="blog-grid/">Blog</a>
   </div>
-  <div class="nav-mobile-ctas">
-    <a href="https://blrbooking.cleanwarks.com" class="btn btn-orange">Book a Service</a>
-    <a href="https://wa.me/918304000046" class="btn btn-green">WhatsApp Kerala</a>
-    <a href="https://wa.me/917034455665" class="btn btn-green">WhatsApp Bangalore</a>
+  <div class="mobile-menu-ctas">
+    <a href="https://blrbooking.cleanwarks.com" class="btn-cln-yellow" style="text-align:center;justify-content:center;">Book a Cleaning</a>
+    <a href="https://wa.me/918304000046" style="display:block;text-align:center;background:#22C55E;color:white;padding:14px;border-radius:100px;font-weight:700;text-decoration:none;">WhatsApp Kerala</a>
+    <a href="https://wa.me/917034455665" style="display:block;text-align:center;background:#22C55E;color:white;padding:14px;border-radius:100px;font-weight:700;text-decoration:none;">WhatsApp Bangalore</a>
   </div>
-  <div class="nav-mobile-info">
-    <div><span class="topbar-label">Kerala</span> <a href="tel:+918304000046">8304000046</a></div>
-    <div><span class="topbar-label">Bangalore</span> <a href="tel:+917034455665">7034455665</a></div>
-    <div><a href="mailto:cleanwarks@gmail.com">cleanwarks@gmail.com</a></div>
+  <div style="margin-top:24px;padding-top:24px;border-top:1px solid #eee;font-size:0.875rem;color:#888;">
+    <div style="margin-bottom:8px;">Kerala: <a href="tel:+918304000046" style="font-weight:700;color:#111;">8304000046</a></div>
+    <div>Bangalore: <a href="tel:+917034455665" style="font-weight:700;color:#111;">7034455665</a></div>
   </div>
 </div>
 
-<!-- ========== HERO ========== -->
-<section class="hero-v3">
-  <div class="container">
-    <div class="hero-v3-grid">
+<!-- ============================================================
+     ABOUT SECTION
+     ============================================================ -->
+<section class="about-cln">
+  <div class="about-cln-grid">
 
-      <!-- Text -->
-      <div class="hero-v3-text fade-up">
-        <div class="hero-v3-badge">
-          <span class="pulse-dot"></span>
-          Kerala &amp; Bangalore · Trusted Since 2020
-        </div>
-        <h1>Your Home,<br><em>Impeccably</em><br>Clean.</h1>
-        <p class="lead">From weekly upkeep to deep restoration — Clean Warks brings hospitality-grade cleaning to homes and offices across Kochi, Kottayam and Bangalore.</p>
-        <div class="hero-v3-ctas">
-          <a href="https://blrbooking.cleanwarks.com" class="btn btn-orange btn-lg">Book a Cleaning</a>
-          <a href="services/" class="btn btn-outline btn-lg">Explore Services</a>
-        </div>
-        <div class="hero-v3-social-proof">
-          <div class="hero-v3-avatars">
-            <span class="av1">K</span>
-            <span class="av2">B</span>
-            <span class="av3">M</span>
-            <span class="av4">A</span>
-          </div>
-          <div>
-            <div class="hero-v3-stars">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-            </div>
-            <div class="hero-v3-proof-text"><strong>4.9 rating</strong> from 5,000+ happy clients</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Visual -->
-      <div class="hero-v3-visual fade-up delay-1">
-        <div class="hero-v3-img-wrap">
-          <img src="https://cleanwarks.com/wp-content/uploads/2023/11/h10-top-banner1.png"
-               alt="Clean Warks professional cleaning team at work" loading="eager">
-        </div>
-
-        <!-- Floating: 4.9 rating -->
-        <div class="hero-float-rating">
-          <div class="fr-num">4.9</div>
-          <div class="fr-stars">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-          </div>
-          <div class="fr-label">Average Rating</div>
-        </div>
-
-        <!-- Floating: Clients -->
-        <div class="hero-float-clients">
-          <div class="fc-avatars">
-            <span class="fc1">K</span>
-            <span class="fc2">B</span>
-            <span class="fc3">M</span>
-          </div>
-          <div class="fc-text">
-            <div class="fc-num">5,000+</div>
-            <div class="fc-sub">Happy Clients</div>
-          </div>
-        </div>
-      </div>
-
+    <div class="about-cln-text fade-up">
+      <a href="about-us/" class="about-cln-meta">
+        About Us
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <h2>Where Quality Cleaning Meets True Care</h2>
+      <p>At Clean Warks, we believe a clean home inspires a clear mind. Our trained professionals deliver eco-friendly cleaning across Kerala and Bangalore — with hospitality-grade attention to every corner.</p>
+      <ul class="checklist-cln">
+        <li>Every corner cleaned with expert care and detail.</li>
+        <li>Eco-friendly products — safe for your home and the planet.</li>
+        <li>Skilled, verified team delivering reliable, quality service.</li>
+      </ul>
+      <a href="about-us/" class="btn-cln-yellow">Learn More</a>
     </div>
+
+    <div class="about-cln-img-wrap fade-up delay-1">
+      <img src="https://cleanwarks.com/wp-content/uploads/2020/11/update-banner1-1-480x400.jpg"
+           alt="Clean Warks professional cleaning in action" loading="lazy">
+      <div class="trust-badge-cln">
+        <p>Trusted By our customers</p>
+        <div class="trust-avatars-cln">
+          <div class="av" style="background:#EFC93D;color:#111;font-weight:800;">K</div>
+          <div class="av" style="background:#22C55E;color:white;font-weight:800;">B</div>
+          <div class="av" style="background:#3B82F6;color:white;font-weight:800;">M</div>
+          <div class="av" style="background:#111;color:white;font-weight:800;">A</div>
+        </div>
+        <div class="trust-count-cln">
+          <div class="trust-count-num">5,000+</div>
+          <div class="trust-count-label">Client<br>Satisfied</div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
-<!-- ========== SERVICES TICKER ========== -->
-<div class="ticker-strip" aria-hidden="true">
-  <div class="ticker-strip-inner">
-    <span class="ticker-item">House Cleaning<span class="ticker-dot"></span></span>
-    <span class="ticker-item">Deep Cleaning<span class="ticker-dot"></span></span>
-    <span class="ticker-item">Sofa &amp; Couch<span class="ticker-dot"></span></span>
-    <span class="ticker-item">Bathroom Cleaning<span class="ticker-dot"></span></span>
-    <span class="ticker-item">Kitchen Cleaning<span class="ticker-dot"></span></span>
-    <span class="ticker-item">Water Tank<span class="ticker-dot"></span></span>
-    <span class="ticker-item">Office Cleaning<span class="ticker-dot"></span></span>
-    <span class="ticker-item">Carpet Cleaning<span class="ticker-dot"></span></span>
-    <span class="ticker-item">Window Cleaning<span class="ticker-dot"></span></span>
-    <span class="ticker-item">Pressure Washing<span class="ticker-dot"></span></span>
-    <span class="ticker-item">Outdoor Cleaning<span class="ticker-dot"></span></span>
-    <!-- duplicate for seamless loop -->
-    <span class="ticker-item">House Cleaning<span class="ticker-dot"></span></span>
-    <span class="ticker-item">Deep Cleaning<span class="ticker-dot"></span></span>
-    <span class="ticker-item">Sofa &amp; Couch<span class="ticker-dot"></span></span>
-    <span class="ticker-item">Bathroom Cleaning<span class="ticker-dot"></span></span>
-    <span class="ticker-item">Kitchen Cleaning<span class="ticker-dot"></span></span>
-    <span class="ticker-item">Water Tank<span class="ticker-dot"></span></span>
-    <span class="ticker-item">Office Cleaning<span class="ticker-dot"></span></span>
-    <span class="ticker-item">Carpet Cleaning<span class="ticker-dot"></span></span>
-    <span class="ticker-item">Window Cleaning<span class="ticker-dot"></span></span>
-    <span class="ticker-item">Pressure Washing<span class="ticker-dot"></span></span>
-    <span class="ticker-item">Outdoor Cleaning<span class="ticker-dot"></span></span>
-  </div>
-</div>
-
-<!-- ========== ABOUT ========== -->
-<section class="about-v3">
-  <div class="container">
-    <div class="about-v3-grid">
-
-      <div class="about-v3-text fade-up">
-        <span class="eyebrow">About Clean Warks</span>
-        <h2>Where Quality Cleaning Meets True Care.</h2>
-        <p>Founded in Kochi in 2020, Clean Warks has built its reputation on hospitality-grade cleaning across Kerala — Kochi, Kottayam, Pathanamthitta and Alappuzha. In 2024 we proudly brought the same trained team and uncompromising standards to Bangalore.</p>
-        <div class="checklist">
-          <div class="checklist-item">
-            <span class="checklist-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-            </span>
-            Every corner cleaned with expert attention and detail.
-          </div>
-          <div class="checklist-item">
-            <span class="checklist-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-            </span>
-            Eco-friendly products — safe for your family and pets.
-          </div>
-          <div class="checklist-item">
-            <span class="checklist-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-            </span>
-            Trained, verified professionals — reliable every time.
-          </div>
-        </div>
-        <a href="about-us/" class="btn btn-orange">Our Story</a>
-      </div>
-
-      <div class="about-v3-image fade-up delay-1">
-        <div class="about-v3-img-main">
-          <img src="https://cleanwarks.com/wp-content/uploads/2020/11/update-banner1-1-480x400.jpg"
-               alt="Clean Warks team in action" loading="lazy">
-        </div>
-        <div class="about-v3-badge">
-          <div class="ab-num">5+</div>
-          <div class="ab-label">Years of<br>Excellence</div>
-        </div>
-      </div>
-
+<!-- ============================================================
+     STATS BAR
+     ============================================================ -->
+<div class="stats-cln">
+  <div class="stats-cln-inner">
+    <div class="stat-cln fade-up">
+      <div class="stat-cln-num">5,000+</div>
+      <div class="stat-cln-label">Happy Clients</div>
     </div>
-  </div>
-</section>
-
-<!-- ========== STATS BAR ========== -->
-<div class="stats-bar-v3">
-  <div class="container">
-    <div class="stat-v3 fade-up">
-      <div class="stat-v3-num"><span data-count="5000" data-suffix="+">0+</span></div>
-      <div class="stat-v3-label">Happy Clients</div>
+    <div class="stat-sep-cln"></div>
+    <div class="stat-cln fade-up delay-1">
+      <div class="stat-cln-num">11+</div>
+      <div class="stat-cln-label">Services Offered</div>
     </div>
-    <div class="stat-v3 fade-up delay-1">
-      <div class="stat-v3-num"><span data-count="11" data-suffix="+">0+</span></div>
-      <div class="stat-v3-label">Services Offered</div>
+    <div class="stat-sep-cln"></div>
+    <div class="stat-cln fade-up delay-2">
+      <div class="stat-cln-num">4.9/5</div>
+      <div class="stat-cln-label">Average Rating</div>
     </div>
-    <div class="stat-v3 fade-up delay-2">
-      <div class="stat-v3-num">4.9★</div>
-      <div class="stat-v3-label">Average Rating</div>
-    </div>
-    <div class="stat-v3 fade-up delay-3">
-      <div class="stat-v3-num">5+</div>
-      <div class="stat-v3-label">Years of Service</div>
+    <div class="stat-sep-cln"></div>
+    <div class="stat-cln fade-up delay-3">
+      <div class="stat-cln-num">5yrs</div>
+      <div class="stat-cln-label">Industry Experience</div>
     </div>
   </div>
 </div>
 
-<!-- ========== SERVICES ========== -->
-<section class="services-v3">
-  <div class="container">
-    <div class="services-v3-head fade-up">
-      <div class="services-v3-head-text">
-        <span class="eyebrow">Our Services</span>
+<!-- ============================================================
+     SERVICES
+     ============================================================ -->
+<section class="services-cln">
+  <div class="services-cln-inner">
+    <div class="services-cln-head fade-up">
+      <div class="services-cln-head-text">
+        <span>Our Services</span>
         <h2>Every Space, Spotlessly Clean</h2>
-        <p>From routine upkeep to deep restorations — our trained team serves homes and offices across Kerala and Bangalore.</p>
+        <p>From routine upkeep to deep restorations — trained teams across Kerala and Bangalore.</p>
       </div>
-      <a href="services/" class="services-v3-link">
+      <a href="services/" class="services-view-all">
         View All Services
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
       </a>
     </div>
 
-    <div class="services-v3-grid">
+    <div class="services-cln-grid">
 
-      <!-- House Cleaning -->
-      <article class="svc-card fade-up">
-        <div class="svc-card-img">
-          <img src="https://cleanwarks.com/wp-content/uploads/2023/12/h10-service1.jpg"
-               alt="House cleaning services" loading="lazy">
-          <span class="svc-tag kerala">Popular in Kerala</span>
+      <article class="svc-cln-card fade-up">
+        <div class="svc-cln-img">
+          <img src="https://cleanwarks.com/wp-content/uploads/2023/12/h10-service1.jpg" alt="House cleaning" loading="lazy">
         </div>
-        <div class="svc-card-body">
+        <div class="svc-cln-body">
           <h3>House Cleaning</h3>
-          <p>Routine dusting, mopping and organised care that keeps every room spotless day after day.</p>
-          <a href="service/house-cleaning-services/" class="svc-card-cta">
+          <p>Routine dusting, mopping and organised care — every room spotless, day after day.</p>
+          <a href="service/house-cleaning-services/" class="svc-cln-cta">
             Book Service
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
         </div>
       </article>
 
-      <!-- Deep Cleaning -->
-      <article class="svc-card fade-up delay-1">
-        <div class="svc-card-img">
-          <img src="https://cleanwarks.com/wp-content/uploads/2020/09/h6-service1.jpg"
-               alt="Deep cleaning services" loading="lazy">
-          <span class="svc-tag">All Locations</span>
+      <article class="svc-cln-card fade-up delay-1">
+        <div class="svc-cln-img">
+          <img src="https://cleanwarks.com/wp-content/uploads/2020/09/h6-service1.jpg" alt="Deep cleaning" loading="lazy">
         </div>
-        <div class="svc-card-body">
+        <div class="svc-cln-body">
           <h3>Deep Cleaning</h3>
           <p>Intensive cleaning for kitchens, bathrooms and every hidden corner — perfect for move-in or seasonal refresh.</p>
-          <a href="service/deep-cleaning-services/" class="svc-card-cta">
+          <a href="service/deep-cleaning-services/" class="svc-cln-cta">
             Book Service
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
         </div>
       </article>
 
-      <!-- Sofa & Couch -->
-      <article class="svc-card fade-up delay-2">
-        <div class="svc-card-img">
-          <img src="https://cleanwarks.com/wp-content/uploads/2026/02/Sofa-white-with-seperation-scaled.jpeg"
-               alt="Sofa and couch cleaning" loading="lazy">
-          <span class="svc-tag bangalore">Top in Bangalore</span>
+      <article class="svc-cln-card fade-up delay-2">
+        <div class="svc-cln-img">
+          <img src="https://cleanwarks.com/wp-content/uploads/2020/10/water-tank-cleaning-services-scaled.jpeg" alt="Water tank cleaning" loading="lazy">
         </div>
-        <div class="svc-card-body">
-          <h3>Sofa &amp; Couch</h3>
-          <p>Steam and shampoo cleaning for fabric, leather and microfibre upholstery — restored to like-new freshness.</p>
-          <a href="service/couch-cleaning-services/" class="svc-card-cta">
+        <div class="svc-cln-body">
+          <h3>Water Tank Cleaning</h3>
+          <p>Sediment removal, scrubbing and chlorination for overhead tanks and sumps.</p>
+          <a href="service/water-tank-cleaning-services/" class="svc-cln-cta">
             Book Service
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
         </div>
       </article>
 
-      <!-- Bathroom -->
-      <article class="svc-card fade-up">
-        <div class="svc-card-img">
-          <img src="https://cleanwarks.com/wp-content/uploads/2022/02/bathroom-8714843_1920-660x410.jpg"
-               alt="Bathroom cleaning" loading="lazy">
-          <span class="svc-tag kerala">Popular in Kerala</span>
+      <article class="svc-cln-card fade-up">
+        <div class="svc-cln-img">
+          <img src="https://cleanwarks.com/wp-content/uploads/2022/02/bathroom-8714843_1920-660x410.jpg" alt="Bathroom cleaning" loading="lazy">
         </div>
-        <div class="svc-card-body">
+        <div class="svc-cln-body">
           <h3>Bathroom Cleaning</h3>
-          <p>Tile, grout, fixture and sanitary cleaning that leaves your bathroom hygienic and sparkling fresh.</p>
-          <a href="service/bathroom-cleaning-services/" class="svc-card-cta">
+          <p>Tile, grout, fixture and sanitary cleaning — hygienic and sparkling results guaranteed.</p>
+          <a href="service/bathroom-cleaning-services/" class="svc-cln-cta">
             Book Service
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
         </div>
       </article>
 
-      <!-- Kitchen -->
-      <article class="svc-card fade-up delay-1">
-        <div class="svc-card-img">
-          <img src="https://cleanwarks.com/wp-content/uploads/2020/10/vaccum-service-scaled.jpeg"
-               alt="Kitchen cleaning" loading="lazy">
-          <span class="svc-tag kerala">Popular in Kerala</span>
+      <article class="svc-cln-card fade-up delay-1">
+        <div class="svc-cln-img">
+          <img src="https://cleanwarks.com/wp-content/uploads/2020/09/kitchen-cleaning-service.jpg" alt="Kitchen cleaning" loading="lazy">
         </div>
-        <div class="svc-card-body">
+        <div class="svc-cln-body">
           <h3>Kitchen Cleaning</h3>
           <p>Degreasing, chimney cleaning, cabinet and countertop care for a truly spotless cooking space.</p>
-          <a href="service/kitchen-cleaning-services/" class="svc-card-cta">
+          <a href="service/kitchen-cleaning-services/" class="svc-cln-cta">
             Book Service
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
         </div>
       </article>
 
-      <!-- Water Tank -->
-      <article class="svc-card fade-up delay-2">
-        <div class="svc-card-img">
-          <img src="https://cleanwarks.com/wp-content/uploads/2020/10/water-tank-cleaning-services-scaled.jpeg"
-               alt="Water tank cleaning" loading="lazy">
-          <span class="svc-tag bangalore">Growing in Bangalore</span>
+      <article class="svc-cln-card fade-up delay-2">
+        <div class="svc-cln-img">
+          <img src="https://cleanwarks.com/wp-content/uploads/2023/08/sofa-cleaning-in-Kochi.jpg" alt="Sofa cleaning" loading="lazy">
         </div>
-        <div class="svc-card-body">
-          <h3>Water Tank / Sump</h3>
-          <p>Sediment removal, scrubbing and chlorination for overhead tanks and underground sumps.</p>
-          <a href="service/water-tank-cleaning-services/" class="svc-card-cta">
+        <div class="svc-cln-body">
+          <h3>Sofa &amp; Couch Cleaning</h3>
+          <p>Steam and shampoo cleaning for fabric, leather and microfibre — restored to like-new freshness.</p>
+          <a href="service/couch-cleaning-services/" class="svc-cln-cta">
             Book Service
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
@@ -395,205 +1603,200 @@
   </div>
 </section>
 
-<!-- ========== HOW IT WORKS ========== -->
-<section class="process-v3-wrap">
-  <div class="container">
-    <div class="process-v3 fade-up">
-      <div class="process-v3-grid">
+<!-- ============================================================
+     HOW IT WORKS
+     ============================================================ -->
+<section class="process-cln">
+  <div class="process-cln-inner">
 
-        <div class="process-v3-steps">
-          <div class="process-v3-head">
-            <span class="eyebrow">How We Work</span>
-            <h2>Clean Results, Every Single Time</h2>
-            <p>From booking to spotless finish — here's how Clean Warks makes professional cleaning effortless, whether you're in Kochi, Kottayam or Bangalore.</p>
-          </div>
+    <div class="fade-up">
+      <span class="process-cln-eyebrow">How We Work</span>
+      <h2>Clean Results, Every Single Time</h2>
+      <p>From booking to spotless finish — Clean Warks makes professional cleaning effortless across Kerala and Bangalore.</p>
 
-          <div class="process-v3-step-list">
-            <div class="process-v3-step">
-              <div class="process-v3-step-icon">1</div>
-              <div class="process-v3-step-body">
-                <h4>Book Your Cleaning</h4>
-                <p>Choose your service online or call us. We'll match you with a trusted professional and confirm your slot within hours.</p>
-              </div>
-            </div>
-            <div class="process-v3-step">
-              <div class="process-v3-step-icon">2</div>
-              <div class="process-v3-step-body">
-                <h4>We Arrive, Ready to Work</h4>
-                <p>Our trained team arrives on time, fully equipped with eco-friendly supplies — no hidden charges, no surprises.</p>
-                <a href="https://blrbooking.cleanwarks.com" class="btn btn-orange btn-sm process-step-cta">Book Now</a>
-              </div>
-            </div>
-            <div class="process-v3-step">
-              <div class="process-v3-step-icon">3</div>
-              <div class="process-v3-step-body">
-                <h4>Relax &amp; Enjoy Your Space</h4>
-                <p>Sit back while we take care of everything — your home is left spotless, fresh and ready for comfort.</p>
-              </div>
-            </div>
+      <div class="process-steps-cln">
+        <div class="process-step-cln">
+          <div class="process-step-num">1</div>
+          <div>
+            <h4>Book Your Cleaning</h4>
+            <p>Choose your service online or call us. We confirm your slot within hours — no hassle.</p>
           </div>
         </div>
-
-        <div class="process-v3-image">
-          <div class="process-v3-img-wrap">
-            <img src="https://cleanwarks.com/wp-content/uploads/2020/11/update-banner2-372x401.jpg"
-                 alt="Clean Warks team delivering a spotless clean" loading="lazy">
-          </div>
-          <div class="process-v3-float">
-            <div class="process-v3-float-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            </div>
-            <div>
-              <div class="process-v3-float-num">98%</div>
-              <div class="process-v3-float-text">Customer<br>Satisfaction</div>
-            </div>
+        <div class="process-step-cln">
+          <div class="process-step-num">2</div>
+          <div>
+            <h4>We Arrive, Ready to Work</h4>
+            <p>Our trained team arrives on time, fully equipped with eco-friendly supplies. No hidden charges.</p>
+            <a href="https://blrbooking.cleanwarks.com" class="btn-cln-yellow" style="margin-top:14px;display:inline-flex;">Book Now</a>
           </div>
         </div>
-
+        <div class="process-step-cln">
+          <div class="process-step-num">3</div>
+          <div>
+            <h4>Relax &amp; Enjoy Your Space</h4>
+            <p>Sit back while we handle everything — your home left spotless, fresh and ready for comfort.</p>
+          </div>
+        </div>
       </div>
     </div>
+
+    <div class="process-cln-img fade-up delay-1">
+      <img src="https://cleanwarks.com/wp-content/uploads/2020/11/update-banner2-372x401.jpg"
+           alt="Clean Warks team delivering a spotless clean" loading="lazy">
+      <div class="process-badge-cln">
+        <div class="process-badge-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <div>
+          <div class="process-badge-num">98%</div>
+          <div class="process-badge-label">Customer Satisfaction</div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
-<!-- ========== LOCATIONS ========== -->
-<section class="section section-light">
-  <div class="container">
-    <div class="section-head fade-up">
-      <span class="eyebrow">Where We Serve</span>
+<!-- ============================================================
+     LOCATIONS
+     ============================================================ -->
+<section class="locations-cln">
+  <div class="locations-cln-inner">
+    <div class="section-head-cln fade-up">
+      <span>Where We Serve</span>
       <h2>Trusted Across Kerala &amp; Bangalore</h2>
-      <p class="lead">Two primary hubs in Kerala — growing with the same Clean Warks quality in Bangalore since 2024.</p>
+      <p>Two primary hubs in Kerala — now growing with the same Clean Warks quality in Bangalore since 2024.</p>
     </div>
 
-    <div class="locations-grid">
-      <div class="location-card fade-up">
-        <span class="badge badge-orange">Primary Hub · Since 2020</span>
+    <div class="locations-cln-grid">
+
+      <div class="loc-card-cln fade-up">
+        <div class="loc-card-tag">Primary Hub · Since 2020</div>
         <h3>Kochi</h3>
-        <div class="location-address">
+        <div class="loc-card-addr">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
           Kattiparambil Arcade, St. Vincent Convent Road, Palarivattom, Kochi – 682025
         </div>
-        <div class="location-phone">
+        <a href="tel:+918304000046" class="loc-card-phone">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          <a href="tel:+918304000046">8304000046</a>
+          8304000046
+        </a>
+        <div class="loc-card-tags">
+          <span>House</span><span>Deep</span><span>Bathroom</span><span>Kitchen</span><span>Sofa</span><span>Water Tank</span><span>Office</span><span>Carpet</span>
         </div>
-        <div class="location-pills">
-          <span>House</span><span>Deep</span><span>Bathroom</span><span>Kitchen</span><span>Sofa</span><span>Water Tank</span><span>Office</span><span>Carpet</span><span>Outdoor</span><span>Pressure Wash</span><span>Window</span>
-        </div>
-        <div class="location-actions">
-          <a href="https://blrbooking.cleanwarks.com" class="btn btn-orange btn-sm">Book Online</a>
-          <a href="https://wa.me/918304000046" class="btn btn-green btn-sm">WhatsApp</a>
+        <div class="loc-card-actions">
+          <a href="https://blrbooking.cleanwarks.com" class="loc-btn-yellow">Book Online</a>
+          <a href="https://wa.me/918304000046" class="loc-btn-green">WhatsApp</a>
         </div>
       </div>
 
-      <div class="location-card fade-up delay-1">
-        <span class="badge badge-orange">Primary Hub · Since 2021</span>
+      <div class="loc-card-cln fade-up delay-1">
+        <div class="loc-card-tag">Primary Hub · Since 2021</div>
         <h3>Kottayam</h3>
-        <div class="location-address">
+        <div class="loc-card-addr">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
           Parthas Lane, KK Road, Kottayam – 686001
         </div>
-        <div class="location-phone">
+        <a href="tel:+918304000046" class="loc-card-phone">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          <a href="tel:+918304000046">8304000046</a>
+          8304000046
+        </a>
+        <div class="loc-card-tags">
+          <span>House</span><span>Deep</span><span>Bathroom</span><span>Kitchen</span><span>Sofa</span><span>Water Tank</span><span>Office</span><span>Carpet</span>
         </div>
-        <div class="location-pills">
-          <span>House</span><span>Deep</span><span>Bathroom</span><span>Kitchen</span><span>Sofa</span><span>Water Tank</span><span>Office</span><span>Carpet</span><span>Outdoor</span><span>Pressure Wash</span><span>Window</span>
-        </div>
-        <div class="location-actions">
-          <a href="https://blrbooking.cleanwarks.com" class="btn btn-orange btn-sm">Book Online</a>
-          <a href="https://wa.me/918304000046" class="btn btn-green btn-sm">WhatsApp</a>
+        <div class="loc-card-actions">
+          <a href="https://blrbooking.cleanwarks.com" class="loc-btn-yellow">Book Online</a>
+          <a href="https://wa.me/918304000046" class="loc-btn-green">WhatsApp</a>
         </div>
       </div>
 
-      <div class="location-card fade-up delay-2">
-        <span class="badge">Now Serving · 2024</span>
+      <div class="loc-card-cln fade-up delay-2">
+        <div class="loc-card-tag">Now Serving · Since 2024</div>
         <h3>Bangalore</h3>
-        <div class="location-address">
+        <div class="loc-card-addr">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          Serving Bangalore citywide. Online booking available — same Clean Warks team and standards.
+          Serving Bangalore citywide. Same Clean Warks team and standards.
         </div>
-        <div class="location-phone">
+        <a href="tel:+917034455665" class="loc-card-phone">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          <a href="tel:+917034455665">7034455665</a>
+          7034455665
+        </a>
+        <div class="loc-card-tags">
+          <span>House</span><span>Deep</span><span>Sofa</span><span>Water Tank</span><span>Office</span><span>Carpet</span><span>Window</span>
         </div>
-        <div class="location-pills">
-          <span>Sofa</span><span>Water Tank</span><span>House</span><span>Deep</span><span>Bathroom</span><span>Kitchen</span><span>Office</span><span>Carpet</span><span>Window</span>
-        </div>
-        <div class="location-actions">
-          <a href="https://blrbooking.cleanwarks.com" class="btn btn-orange btn-sm">Book Online</a>
-          <a href="https://wa.me/917034455665" class="btn btn-green btn-sm">WhatsApp</a>
+        <div class="loc-card-actions">
+          <a href="https://blrbooking.cleanwarks.com" class="loc-btn-yellow">Book Online</a>
+          <a href="https://wa.me/917034455665" class="loc-btn-green">WhatsApp</a>
         </div>
       </div>
-    </div>
 
-    <p class="text-center" style="margin-top: var(--space-6); color: var(--muted); font-size: 0.9375rem;">Also serving <strong style="color: var(--dark)">Pathanamthitta</strong> and <strong style="color: var(--dark)">Alappuzha</strong> in Kerala — call <a href="tel:+918304000046" style="color: var(--orange); font-weight: 700;">8304000046</a></p>
+    </div>
   </div>
 </section>
 
-<!-- ========== TESTIMONIALS ========== -->
-<section class="testimonials-v3">
-  <div class="container">
-    <div class="testimonials-v3-head fade-up">
-      <span class="eyebrow">Client Stories</span>
+<!-- ============================================================
+     TESTIMONIALS
+     ============================================================ -->
+<section class="testi-cln">
+  <div class="testi-cln-inner">
+    <div class="section-head-cln fade-up">
+      <span>Client Stories</span>
       <h2>Stories From Happy Homes</h2>
       <p>Our customers love how Clean Warks transforms their spaces — professional care, punctual team, spotless results.</p>
     </div>
 
-    <div class="testimonials-v3-grid">
+    <div class="testi-cln-grid">
 
-      <div class="testimonial-v3 fade-up">
-        <div class="testimonial-v3-quote-mark">"</div>
-        <div class="testimonial-v3-stars">
+      <div class="testi-cln-card fade-up">
+        <div class="testi-stars-cln">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         </div>
-        <p class="testimonial-v3-quote">"Their deep cleaning completely transformed my kitchen. It feels brand new again — worth every rupee. The team was punctual, polite and incredibly thorough."</p>
-        <div class="testimonial-v3-author">
-          <div class="testimonial-v3-avatar ta-orange">M</div>
+        <p class="testi-quote-cln">"Their deep cleaning completely transformed my kitchen. It feels brand new again — worth every rupee. The team was punctual, polite and incredibly thorough."</p>
+        <div class="testi-author-cln">
+          <div class="testi-av av-y">M</div>
           <div>
-            <div class="testimonial-v3-name">Meera J.</div>
-            <div class="testimonial-v3-loc">Deep Cleaning · Kochi</div>
+            <div class="testi-author-name">Meera J.</div>
+            <div class="testi-author-loc">Deep Cleaning · Kochi</div>
           </div>
         </div>
       </div>
 
-      <div class="testimonial-v3 fade-up delay-1">
-        <div class="testimonial-v3-quote-mark">"</div>
-        <div class="testimonial-v3-stars">
+      <div class="testi-cln-card fade-up delay-1">
+        <div class="testi-stars-cln">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         </div>
-        <p class="testimonial-v3-quote">"I loved how eco-friendly their products were. My house smells wonderfully fresh and I didn't worry about harsh chemicals near my kids. Highly recommend Clean Warks!"</p>
-        <div class="testimonial-v3-author">
-          <div class="testimonial-v3-avatar ta-blue">D</div>
+        <p class="testi-quote-cln">"I loved how eco-friendly their products were. My house smells wonderfully fresh and I didn't have to worry about harsh chemicals near my kids. Highly recommend!"</p>
+        <div class="testi-author-cln">
+          <div class="testi-av av-b">D</div>
           <div>
-            <div class="testimonial-v3-name">David P.</div>
-            <div class="testimonial-v3-loc">Office Cleaning · Bangalore</div>
+            <div class="testi-author-name">David P.</div>
+            <div class="testi-author-loc">Office Cleaning · Bangalore</div>
           </div>
         </div>
       </div>
 
-      <div class="testimonial-v3 fade-up delay-2">
-        <div class="testimonial-v3-quote-mark">"</div>
-        <div class="testimonial-v3-stars">
+      <div class="testi-cln-card fade-up delay-2">
+        <div class="testi-stars-cln">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         </div>
-        <p class="testimonial-v3-quote">"Booking was super easy and the team was so polite. I've never seen my sofa this clean — punctual, friendly and incredibly thorough. Will definitely book again!"</p>
-        <div class="testimonial-v3-author">
-          <div class="testimonial-v3-avatar ta-green">A</div>
+        <p class="testi-quote-cln">"Booking was super easy and the team was so polite. I've never seen my sofa this clean — punctual, friendly and incredibly thorough. Will definitely book again!"</p>
+        <div class="testi-author-cln">
+          <div class="testi-av av-g">A</div>
           <div>
-            <div class="testimonial-v3-name">Amelia R.</div>
-            <div class="testimonial-v3-loc">Sofa Cleaning · Kottayam</div>
+            <div class="testi-author-name">Amelia R.</div>
+            <div class="testi-author-loc">Sofa Cleaning · Kottayam</div>
           </div>
         </div>
       </div>
@@ -602,103 +1805,75 @@
   </div>
 </section>
 
-<!-- ========== CTA BANNER ========== -->
-<section class="cta-v3">
-  <div class="container">
-    <div class="cta-v3-inner fade-up">
-      <div class="cta-v3-text">
-        <h2>Ready for a Cleaner Space?</h2>
-        <p>Serving Kochi, Kottayam and Bangalore with the same professional team and uncompromising standards. Book online or call us directly.</p>
-      </div>
-      <div class="cta-v3-actions">
-        <a href="https://blrbooking.cleanwarks.com" class="btn btn-orange btn-lg">Book Online</a>
-        <a href="tel:+918304000046" class="btn btn-white btn-lg">Kerala: 8304000046</a>
-        <a href="tel:+917034455665" class="btn btn-outline btn-lg" style="border-color: rgba(255,255,255,0.3); color: #C9CFDB;">Bangalore: 7034455665</a>
-      </div>
+<!-- ============================================================
+     CTA BANNER
+     ============================================================ -->
+<section class="cta-cln">
+  <div class="cta-cln-inner fade-up">
+    <div>
+      <h2>Ready for a Cleaner Space?</h2>
+      <p>Serving Kochi, Kottayam and Bangalore with the same professional team and uncompromising standards.</p>
+    </div>
+    <div class="cta-cln-actions">
+      <a href="https://blrbooking.cleanwarks.com" class="cta-btn-yellow">Book Online</a>
+      <a href="tel:+918304000046" class="cta-btn-outline">Kerala: 8304000046</a>
+      <a href="tel:+917034455665" class="cta-btn-outline">Bangalore: 7034455665</a>
     </div>
   </div>
 </section>
 
-<!-- ========== NEWSLETTER ========== -->
-<section class="newsletter-v3-wrap">
-  <div class="container">
-    <div class="newsletter-v3 fade-up">
-      <div class="newsletter-v3-text">
-        <span class="eyebrow">Stay Connected</span>
-        <h2>Cleaning Tips &amp; Exclusive Offers</h2>
-        <p>Monthly cleaning tips, seasonal offers and news from the Clean Warks team — delivered to your inbox.</p>
-      </div>
-      <div class="newsletter-v3-form">
-        <form onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
-          <div class="newsletter-v3-input-row">
-            <input type="email" placeholder="Your email address" required>
-            <button type="submit" class="btn btn-orange btn-sm">Subscribe</button>
-          </div>
-        </form>
-        <p class="newsletter-v3-disclaimer">By subscribing you agree to our <a href="privacy-policy/" style="color: var(--orange); font-weight: 600;">Privacy Policy</a>.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ========== BLOG PREVIEW ========== -->
-<section class="section section-white">
-  <div class="container">
-    <div class="section-head fade-up">
-      <span class="eyebrow">From Our Blog</span>
+<!-- ============================================================
+     BLOG PREVIEW
+     ============================================================ -->
+<section class="blog-cln">
+  <div class="blog-cln-inner">
+    <div class="section-head-cln fade-up">
+      <span>From Our Blog</span>
       <h2>Cleaning Tips &amp; Insights</h2>
-      <p class="lead">Practical advice from the Clean Warks team — make your home cleaner, healthier and fresher.</p>
+      <p>Practical advice from the Clean Warks team — make your home cleaner, healthier and fresher.</p>
     </div>
-    <div class="blog-grid">
 
-      <article class="blog-card fade-up">
-        <a href="5-essential-tips-for-effective-house-cleaning-services-in-kochi/" class="blog-image">
-          <img src="https://cleanwarks.com/wp-content/uploads/2024/03/tips-for-house-cleaning-scaled-370x300.jpeg" alt="House cleaning tips in Kochi" loading="lazy">
-        </a>
-        <div class="blog-body">
-          <div class="blog-meta">
-            <span class="blog-meta-cat">House Cleaning</span>
-            <span>· Kochi</span>
-          </div>
+    <div class="blog-cln-grid">
+
+      <article class="blog-cln-card fade-up">
+        <div class="blog-cln-img">
+          <img src="https://cleanwarks.com/wp-content/uploads/2024/03/tips-for-house-cleaning-scaled-370x300.jpeg" alt="House cleaning tips" loading="lazy">
+        </div>
+        <div class="blog-cln-body">
+          <div class="blog-cln-meta"><span>House Cleaning</span><span>· Kochi</span></div>
           <h3>5 Essential Tips for Effective House Cleaning in Kochi</h3>
-          <p>From humid Kerala monsoons to coastal dust — here's how the pros keep Kochi homes spotless all year.</p>
-          <a href="5-essential-tips-for-effective-house-cleaning-services-in-kochi/" class="blog-link">
+          <p>From humid Kerala monsoons to coastal dust — here's how the pros keep homes spotless all year.</p>
+          <a href="5-essential-tips-for-effective-house-cleaning-services-in-kochi/" class="blog-cln-link">
             Read Article
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
         </div>
       </article>
 
-      <article class="blog-card fade-up delay-1">
-        <a href="the-ultimate-guide-to-deep-cleaning-services-what-to-expect/" class="blog-image">
+      <article class="blog-cln-card fade-up delay-1">
+        <div class="blog-cln-img">
           <img src="https://cleanwarks.com/wp-content/uploads/2023/12/h10-service1-370x300.jpg" alt="Deep cleaning guide" loading="lazy">
-        </a>
-        <div class="blog-body">
-          <div class="blog-meta">
-            <span class="blog-meta-cat">Deep Cleaning</span>
-            <span>· Guide</span>
-          </div>
+        </div>
+        <div class="blog-cln-body">
+          <div class="blog-cln-meta"><span>Deep Cleaning</span><span>· Guide</span></div>
           <h3>The Ultimate Guide to Deep Cleaning Services: What to Expect</h3>
-          <p>Booking your first deep clean? Here's exactly what our team does, what to prepare and how long it takes.</p>
-          <a href="the-ultimate-guide-to-deep-cleaning-services-what-to-expect/" class="blog-link">
+          <p>Booking your first deep clean? Here's exactly what our team does and what to prepare.</p>
+          <a href="the-ultimate-guide-to-deep-cleaning-services-what-to-expect/" class="blog-cln-link">
             Read Article
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
         </div>
       </article>
 
-      <article class="blog-card fade-up delay-2">
-        <a href="top-benefits-of-professional-carpet-cleaning-services-for-your-home/" class="blog-image">
-          <img src="https://cleanwarks.com/wp-content/uploads/2020/09/h6-service1-370x300.jpg" alt="Carpet cleaning benefits" loading="lazy">
-        </a>
-        <div class="blog-body">
-          <div class="blog-meta">
-            <span class="blog-meta-cat">Carpet Care</span>
-            <span>· Tips</span>
-          </div>
+      <article class="blog-cln-card fade-up delay-2">
+        <div class="blog-cln-img">
+          <img src="https://cleanwarks.com/wp-content/uploads/2020/09/h6-service1-370x300.jpg" alt="Carpet cleaning" loading="lazy">
+        </div>
+        <div class="blog-cln-body">
+          <div class="blog-cln-meta"><span>Carpet Care</span><span>· Tips</span></div>
           <h3>Top Benefits of Professional Carpet Cleaning for Your Home</h3>
-          <p>Allergens, dust mites and stains live deep in your carpet. Here's why professional extraction makes a real difference.</p>
-          <a href="top-benefits-of-professional-carpet-cleaning-services-for-your-home/" class="blog-link">
+          <p>Allergens, dust mites and stains live deep in your carpet. Here's why professionals make a difference.</p>
+          <a href="top-benefits-of-professional-carpet-cleaning-services-for-your-home/" class="blog-cln-link">
             Read Article
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
@@ -706,40 +1881,45 @@
       </article>
 
     </div>
-    <div class="text-center" style="margin-top: var(--space-7);">
-      <a href="blog-grid/" class="btn btn-outline">View All Articles</a>
+
+    <div style="text-align:center;margin-top:40px;">
+      <a href="blog-grid/" style="display:inline-flex;align-items:center;gap:8px;font-size:0.9375rem;font-weight:700;color:#111;text-decoration:none;border-bottom:1.5px solid #111;padding-bottom:2px;">
+        View All Articles
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
     </div>
   </div>
 </section>
 
-<!-- ========== FOOTER ========== -->
-<footer class="footer-v3">
-  <div class="footer-v3-wordmark">Clean Warks</div>
-  <div class="container">
-    <div class="footer-grid">
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="footer-cln">
+  <div class="footer-cln-inner">
+    <div class="footer-cln-grid">
 
-      <div class="footer-brand">
+      <div class="footer-cln-brand">
         <img src="https://cleanwarks.com/wp-content/uploads/2024/03/Clean-Warks-Logo-no-back-1.png" alt="Clean Warks">
         <p>Premier cleaning services across Kerala and Bangalore. Trusted by 5,000+ homes and offices since 2020.</p>
-        <div class="footer-contact">
-          <div class="footer-contact-item">
+        <div class="footer-cln-contact">
+          <a href="tel:+918304000046">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            <div><span class="footer-contact-label">Kerala</span><a href="tel:+918304000046">8304000046</a></div>
-          </div>
-          <div class="footer-contact-item">
+            Kerala: 8304000046
+          </a>
+          <a href="tel:+917034455665">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            <div><span class="footer-contact-label">Bangalore</span><a href="tel:+917034455665">7034455665</a></div>
-          </div>
-          <div class="footer-contact-item">
+            Bangalore: 7034455665
+          </a>
+          <a href="mailto:cleanwarks@gmail.com">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            <a href="mailto:cleanwarks@gmail.com">cleanwarks@gmail.com</a>
-          </div>
+            cleanwarks@gmail.com
+          </a>
         </div>
       </div>
 
-      <div>
+      <div class="footer-cln-col">
         <h4>Services</h4>
-        <ul class="footer-links">
+        <ul>
           <li><a href="service/house-cleaning-services/">House Cleaning</a></li>
           <li><a href="service/deep-cleaning-services/">Deep Cleaning</a></li>
           <li><a href="service/bathroom-cleaning-services/">Bathroom</a></li>
@@ -749,14 +1929,13 @@
           <li><a href="service/carpet-cleaning-services/">Carpet</a></li>
           <li><a href="service/office-cleaning-services/">Office</a></li>
           <li><a href="service/window-cleaning-services/">Window</a></li>
-          <li><a href="service/outdoor-cleaning-services/">Outdoor</a></li>
           <li><a href="service/pressure-washing-services/">Pressure Washing</a></li>
         </ul>
       </div>
 
-      <div>
+      <div class="footer-cln-col">
         <h4>Company</h4>
-        <ul class="footer-links">
+        <ul>
           <li><a href="about-us/">About Us</a></li>
           <li><a href="services/">All Services</a></li>
           <li><a href="contact/">Contact</a></li>
@@ -765,31 +1944,28 @@
         </ul>
       </div>
 
-      <div>
+      <div class="footer-cln-col">
         <h4>Locations</h4>
-        <ul class="footer-links">
+        <ul>
           <li><a href="contact/">Kochi</a></li>
           <li><a href="contact/">Kottayam</a></li>
           <li><a href="contact/">Pathanamthitta</a></li>
           <li><a href="contact/">Alappuzha</a></li>
-          <li><a href="sofa-cleaning-bangalore/">Bangalore</a></li>
+          <li><a href="contact/">Bangalore</a></li>
         </ul>
-      </div>
-
-      <div>
-        <h4>Legal</h4>
-        <ul class="footer-links">
+        <h4 style="margin-top:24px;">Legal</h4>
+        <ul>
           <li><a href="privacy-policy/">Privacy Policy</a></li>
           <li><a href="refund-policy/">Refund Policy</a></li>
-          <li><a href="terms-conditions/">Terms &amp; Conditions</a></li>
+          <li><a href="terms-conditions/">Terms</a></li>
         </ul>
       </div>
 
     </div>
 
-    <div class="footer-bottom">
+    <div class="footer-cln-bottom">
       <p>© 2025 Clean Warks. All rights reserved. Kerala's premier cleaning service.</p>
-      <div class="footer-bottom-links">
+      <div class="footer-cln-bottom-links">
         <a href="privacy-policy/">Privacy</a>
         <a href="refund-policy/">Refund</a>
         <a href="terms-conditions/">Terms</a>
@@ -799,11 +1975,33 @@
 </footer>
 
 <!-- FLOATING WHATSAPP -->
-<a href="https://wa.me/918304000046" class="float-wa" aria-label="WhatsApp Clean Warks Kerala">
-  <span class="float-wa-tip">Chat on WhatsApp</span>
+<a href="https://wa.me/918304000046" class="float-wa-cln" aria-label="Chat on WhatsApp">
   <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.825 9.825 0 0 0 12.04 2zm5.07 14.07c-.21.59-1.04 1.08-1.69 1.22-.44.09-1.02.17-2.97-.62-2.49-1.03-4.11-3.56-4.23-3.72-.13-.16-1-1.34-1-2.55s.64-1.81.86-2.06c.22-.25.49-.31.65-.31s.32 0 .47.01c.15 0 .35-.06.55.42.21.5.71 1.71.78 1.84.06.13.1.28.02.45-.09.16-.13.27-.25.42-.13.16-.27.35-.38.47-.13.13-.26.27-.11.53.15.25.66 1.09 1.42 1.77.98.87 1.81 1.14 2.07 1.27.26.13.41.11.56-.06.16-.18.65-.76.83-1.02.18-.26.35-.21.59-.13.24.09 1.54.73 1.81.86.27.13.45.2.51.31.07.11.07.62-.14 1.21z"/></svg>
 </a>
 
-<script src="assets/js/shared.js"></script>
+<script>
+// Mobile menu
+document.getElementById('navToggle').addEventListener('click', function() {
+  document.getElementById('mobileMenu').classList.add('open');
+  document.body.style.overflow = 'hidden';
+});
+document.getElementById('menuClose').addEventListener('click', function() {
+  document.getElementById('mobileMenu').classList.remove('open');
+  document.body.style.overflow = '';
+});
+
+// Scroll animations
+const observer = new IntersectionObserver(function(entries) {
+  entries.forEach(function(entry) {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.fade-up').forEach(function(el) {
+  observer.observe(el);
+});
+</script>
 </body>
 </html>

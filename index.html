@@ -2169,6 +2169,11 @@ const observer = new IntersectionObserver(function(entries) {
 document.querySelectorAll('.fade-up').forEach(function(el) {
   observer.observe(el);
 });
+
+// Dynamic copyright year
+document.querySelectorAll('.js-year').forEach(function(el) {
+  el.textContent = new Date().getFullYear();
+});
 </script>
 </body>
 </html>

@@ -145,7 +145,6 @@
   position: relative;
   height: 92vh;
   min-height: 560px;
-  overflow: hidden;
   background: #111;
 }
 
@@ -322,7 +321,7 @@
 /* ---- GIANT WORDMARK ---- */
 .hero-wordmark {
   position: absolute;
-  bottom: -0.12em;
+  bottom: -0.1em;
   left: 0;
   right: 0;
   font-family: 'Cormorant', Georgia, serif;
@@ -336,12 +335,12 @@
   white-space: nowrap;
   letter-spacing: -0.01em;
   z-index: 5;
-  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.5) 60%, rgba(0,0,0,0) 100%);
-  mask-image: linear-gradient(to bottom, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.5) 60%, rgba(0,0,0,0) 100%);
 }
 
 /* ---- ABOUT SECTION ---- */
 .about-cln {
+  position: relative;
+  z-index: 6;
   background: #F5F5EE;
   padding: clamp(60px, 8vw, 100px) 24px;
 }

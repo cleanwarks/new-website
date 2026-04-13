@@ -3672,3 +3672,197 @@ p {
   position: relative;
   z-index: 1;
 }
+
+/* ============================================================
+   FOOTER-CLN — Cleanora-style white footer with watermark
+   (Used on homepage, inner pages, blog pages)
+   ============================================================ */
+.footer-cln {
+  background: #fff;
+  color: #555;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-watermark-wrap {
+  overflow: hidden;
+  line-height: 1;
+  text-align: center;
+  padding: 20px 0 0;
+  pointer-events: none;
+  user-select: none;
+}
+
+.footer-watermark-wrap span {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
+  font-weight: 800;
+  font-size: clamp(80px, 14vw, 200px);
+  color: rgba(0,0,0,0.055);
+  white-space: nowrap;
+  display: block;
+  letter-spacing: -0.02em;
+  line-height: 0.9;
+}
+
+.footer-cln-inner {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 24px 32px;
+}
+
+.footer-cln-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr 1fr;
+  gap: 48px;
+  margin-bottom: 48px;
+  padding-top: 48px;
+}
+
+.footer-cln-brand img {
+  height: 44px;
+  width: auto;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.footer-cln-brand p {
+  font-size: 0.875rem;
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  max-width: 280px;
+}
+
+.footer-cln-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.footer-cln-contact a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.875rem;
+  color: #444;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-cln-contact a:hover { color: #22C55E; }
+.footer-cln-contact a svg { width: 15px; height: 15px; color: #22C55E; flex-shrink: 0; }
+
+/* Office address blocks inside footer */
+.footer-office {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-bottom: 12px;
+  margin-bottom: 6px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.footer-office-label {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #999;
+}
+.footer-office-addr {
+  font-size: 0.8125rem;
+  color: #888;
+  font-style: normal;
+  line-height: 1.5;
+  margin-bottom: 4px;
+}
+
+.footer-cln-col h4 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #111;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 16px;
+}
+
+.footer-cln-col ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-cln-col ul a {
+  font-size: 0.875rem;
+  color: #666;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-cln-col ul a:hover { color: #111; }
+
+.footer-cln-bottom {
+  border-top: 1px solid #eee;
+  padding-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.footer-cln-bottom p {
+  font-size: 0.8125rem;
+  color: #888;
+}
+
+.footer-cln-bottom-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-cln-bottom-links a {
+  font-size: 0.8125rem;
+  color: #888;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-cln-bottom-links a:hover { color: #111; }
+
+/* Floating WhatsApp (Cleanora style) */
+.float-wa-cln {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 58px;
+  height: 58px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  z-index: 90;
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
+  transition: transform 0.2s;
+  text-decoration: none;
+}
+
+.float-wa-cln:hover { transform: scale(1.08); }
+.float-wa-cln svg { width: 28px; height: 28px; }
+
+/* Responsive overrides for footer-cln */
+@media (max-width: 1024px) {
+  .footer-cln-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .footer-cln-brand { grid-column: span 2; }
+  .footer-watermark-wrap span { font-size: clamp(60px, 12vw, 120px); }
+}
+
+@media (max-width: 540px) {
+  .footer-cln-grid { grid-template-columns: 1fr; }
+  .footer-cln-brand { grid-column: span 1; }
+}

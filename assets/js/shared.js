@@ -83,6 +83,11 @@
     counters.forEach((c) => cio.observe(c));
   }
 
+  // ---------- Dynamic copyright year ----------
+  document.querySelectorAll('.js-year').forEach((el) => {
+    el.textContent = new Date().getFullYear();
+  });
+
   // ---------- Smooth scroll for in-page anchors ----------
   document.querySelectorAll('a[href^="#"]').forEach((a) => {
     a.addEventListener('click', (e) => {

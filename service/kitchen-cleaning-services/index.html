@@ -308,6 +308,46 @@
   </div>
 </section>
 
+<!-- FAQ SECTION -->
+<section class="faq-section" style="background:#F5F5EE; padding: clamp(48px,7vw,88px) 20px;">
+  <div class="container" style="max-width:860px; margin:0 auto;">
+    <div style="text-align:center; margin-bottom:40px;">
+      <div style="font-size:0.8125rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#22C55E; margin-bottom:10px;">FAQ</div>
+      <h2 style="font-family:'Plus Jakarta Sans',sans-serif; font-size:clamp(1.5rem,3vw,2.25rem); font-weight:700; color:#111; letter-spacing:-0.025em; line-height:1.2;">Frequently Asked Questions</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">What does professional kitchen cleaning include?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="faq-a"><p>Degreasing of hob/chimney/exhaust, cabinet exteriors and interiors (on request), countertop scrubbing, sink descaling, appliance exterior cleaning, backsplash scrubbing, and floor mopping.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">How do you handle heavy grease build-up?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="faq-a"><p>We use commercial-grade alkaline degreasers that cut through years of grease build-up on chimneys, stove tops and hoods — far more effective than household products.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">How long does a kitchen deep clean take?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="faq-a"><p>2–4 hours for a standard kitchen. Kitchens with heavy grease build-up or large commercial setups may take longer.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Is it safe for food preparation afterwards?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="faq-a"><p>Yes — all products are food-safe and non-toxic once dry. We rinse surfaces thoroughly after cleaning. Your kitchen will be ready for cooking within 30–60 minutes.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Can you clean inside ovens and fridges?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="faq-a"><p>Yes, interior oven cleaning and fridge interior cleaning can be added to your booking. Let us know in advance.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Which cities do you serve?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="faq-a"><p>Kochi, Kottayam, Pathanamthitta, Alappuzha and Bangalore.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">How do I book?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="faq-a"><p>WhatsApp 8304000046 (Kerala) / 7034455665 (Bangalore), or fill our online enquiry form.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- CTA BANNER -->
 <section class="cta-banner">
   <div class="container cta-banner-inner">
@@ -397,5 +437,15 @@
 </a>
 
 <script src="../../assets/js/shared.js"></script>
+<script>
+document.querySelectorAll('.faq-q').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var item = this.closest('.faq-item');
+    var isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(function(i){ i.classList.remove('open'); i.querySelector('.faq-q').setAttribute('aria-expanded','false'); });
+    if (!isOpen) { item.classList.add('open'); this.setAttribute('aria-expanded','true'); }
+  });
+});
+</script>
 </body>
 </html>

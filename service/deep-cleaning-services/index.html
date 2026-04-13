@@ -308,6 +308,46 @@
   </div>
 </section>
 
+<!-- FAQ SECTION -->
+<section class="faq-section" style="background:#F5F5EE; padding: clamp(48px,7vw,88px) 20px;">
+  <div class="container" style="max-width:860px; margin:0 auto;">
+    <div style="text-align:center; margin-bottom:40px;">
+      <div style="font-size:0.8125rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#22C55E; margin-bottom:10px;">FAQ</div>
+      <h2 style="font-family:'Plus Jakarta Sans',sans-serif; font-size:clamp(1.5rem,3vw,2.25rem); font-weight:700; color:#111; letter-spacing:-0.025em; line-height:1.2;">Frequently Asked Questions</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">What is the difference between regular cleaning and deep cleaning?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="faq-a"><p>Regular cleaning covers everyday tasks — sweeping, mopping, wiping surfaces. Deep cleaning goes further: scrubbing grout, cleaning inside appliances, descaling fixtures, removing grime from behind furniture, and disinfecting high-touch surfaces.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">How long does a deep cleaning session take?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="faq-a"><p>A 2BHK deep clean typically takes 6–8 hours; a 3BHK takes 8–10 hours. We send a team of 2–4 trained technicians to complete it efficiently.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">What is included in deep cleaning?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="faq-a"><p>Kitchen degreasing, bathroom descaling, appliance cleaning (inside microwave/oven/fridge exterior), skirting boards, switches, light fixtures, ceiling fans, window sills and tracks, inside cupboards (if requested), and full floor care.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">How often should I get a deep clean?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="faq-a"><p>Most households benefit from a full deep clean every 3–6 months, complemented by regular cleaning in between.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Do I need to arrange anything beforehand?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="faq-a"><p>Clear counters and floors as much as possible. Remove fragile or highly valuable items. Provide access to water and electricity. We bring all equipment and supplies.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Which areas do you serve?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="faq-a"><p>Kochi, Kottayam, Pathanamthitta, Alappuzha and Bangalore.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">How do I book?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="faq-a"><p>WhatsApp 8304000046 (Kerala) / 7034455665 (Bangalore) or book online. We'll confirm within 1 hour.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- CTA BANNER -->
 <section class="cta-banner">
   <div class="container cta-banner-inner">
@@ -397,5 +437,15 @@
 </a>
 
 <script src="../../assets/js/shared.js"></script>
+<script>
+document.querySelectorAll('.faq-q').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var item = this.closest('.faq-item');
+    var isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(function(i){ i.classList.remove('open'); i.querySelector('.faq-q').setAttribute('aria-expanded','false'); });
+    if (!isOpen) { item.classList.add('open'); this.setAttribute('aria-expanded','true'); }
+  });
+});
+</script>
 </body>
 </html>

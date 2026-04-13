@@ -308,6 +308,46 @@
   </div>
 </section>
 
+<!-- FAQ SECTION -->
+<section class="faq-section" style="background:#F5F5EE; padding: clamp(48px,7vw,88px) 20px;">
+  <div class="container" style="max-width:860px; margin:0 auto;">
+    <div style="text-align:center; margin-bottom:40px;">
+      <div style="font-size:0.8125rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#22C55E; margin-bottom:10px;">FAQ</div>
+      <h2 style="font-family:'Plus Jakarta Sans',sans-serif; font-size:clamp(1.5rem,3vw,2.25rem); font-weight:700; color:#111; letter-spacing:-0.025em; line-height:1.2;">Frequently Asked Questions</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">What types of sofas and couches do you clean?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="faq-a"><p>Fabric, microfibre, velvet, leather and faux-leather sofas and sectionals. We adjust cleaning method and products based on the upholstery material.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Will cleaning damage my sofa fabric?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="faq-a"><p>No — we perform a fabric spot-test before starting and use appropriate products for each material. Delicate fabrics like velvet get dry-cleaning treatment to prevent shrinkage.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">How long does sofa cleaning take?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="faq-a"><p>A standard 3-seater takes 1–1.5 hours. Larger sectionals or heavily soiled pieces may take 2–3 hours. Drying typically takes 2–4 hours.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Can you remove pet hair, odours and stains?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="faq-a"><p>Yes. We use enzyme-based products for odour neutralisation and powerful extraction to remove embedded pet hair and stains from deep within the upholstery.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Do I need to move the sofa?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="faq-a"><p>No — we work around your existing layout. If you'd like the back cleaned, we may need to move it slightly from the wall, which we'll handle.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Which areas do you serve?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="faq-a"><p>Kochi, Kottayam, Pathanamthitta, Alappuzha and Bangalore.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">How do I book?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="faq-a"><p>WhatsApp us at 8304000046 (Kerala) or 7034455665 (Bangalore).</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- CTA BANNER -->
 <section class="cta-banner">
   <div class="container cta-banner-inner">
@@ -397,5 +437,15 @@
 </a>
 
 <script src="../../assets/js/shared.js"></script>
+<script>
+document.querySelectorAll('.faq-q').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var item = this.closest('.faq-item');
+    var isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(function(i){ i.classList.remove('open'); i.querySelector('.faq-q').setAttribute('aria-expanded','false'); });
+    if (!isOpen) { item.classList.add('open'); this.setAttribute('aria-expanded','true'); }
+  });
+});
+</script>
 </body>
 </html>

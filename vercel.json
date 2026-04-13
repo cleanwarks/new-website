@@ -2,6 +2,13 @@
   "outputDirectory": ".",
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    {"source": "/service/couch-cleaning-services", "destination": "/sofa-cleaning-services", "permanent": true},
+    {"source": "/service/couch-cleaning-services/", "destination": "/sofa-cleaning-services", "permanent": true},
+    {"source": "/sofa-cleaning", "destination": "/sofa-cleaning-services", "permanent": true},
+    {"source": "/couch-cleaning", "destination": "/sofa-cleaning-services", "permanent": true},
+    {"source": "/couch-cleaning-services", "destination": "/sofa-cleaning-services", "permanent": true}
+  ],
   "headers": [
     {
       "source": "/(.*)",

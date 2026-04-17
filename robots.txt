@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cleanwarks.com/sitemap.xml
+
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/

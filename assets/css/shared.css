@@ -3944,23 +3944,31 @@ p {
 }
 
 /* ============================================================
-   ZOHO SALESIQ — push chat widget above WhatsApp floating btn
-   WA button: bottom 24px + height 58px + 12px gap = 94px
+   ZOHO SALESIQ — position, alignment & z-index fixes
+   WA button: bottom 24px, height 58px, right 24px
+   Zoho launcher: sits ABOVE WA → bottom = 24 + 58 + 12 = 94px
+   right: 24px to align with WA button
+   z-index: must be ABOVE the chat window so the X close button
+   remains clickable after the chat panel opens
    ============================================================ */
-#zsiq_float,
-.zsiq_flt_rel,
-[id*="zsiq_float"],
-.siqico-chat,
-.zsiq_theme1 .zsiq_flt_rel {
+
+/* Launcher button positioning & alignment */
+#zsiq_float {
   bottom: 94px !important;
+  right: 24px !important;
+  z-index: 2147483000 !important; /* above chat window — keeps X clickable */
+}
+
+/* Chat window — sits below launcher, aligned to same right edge */
+.zsiq_theme1.siq_bR,
+.zsiq_chatdiv,
+#zsiq_chatdiv {
+  right: 0 !important;
 }
 
 @media (max-width: 768px) {
-  #zsiq_float,
-  .zsiq_flt_rel,
-  [id*="zsiq_float"],
-  .siqico-chat,
-  .zsiq_theme1 .zsiq_flt_rel {
+  #zsiq_float {
     bottom: 90px !important;
+    right: 16px !important;
   }
 }

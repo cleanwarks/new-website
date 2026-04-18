@@ -500,7 +500,14 @@ document.querySelectorAll('.faq-q').forEach(function(btn) {
   });
 });
 </script>
-<script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script>
+<script>
+window.$zoho = window.$zoho || {};
+$zoho.salesiq = $zoho.salesiq || {};
+$zoho.salesiq.ready = function() {
+  // Keep chat window closed on load — visitor must click the icon to open
+  $zoho.salesiq.floatwindow.visible("hide");
+};
+</script>
 <script id="zsiqscript" src="https://salesiq.zohopublic.in/widget?wc=siq7ed9d7a8db5a416388d2a5160580c3c4e37e6977028f365ffef48123eedc4ac8" defer></script>
 </body>
 </html>

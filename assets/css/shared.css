@@ -3867,3 +3867,78 @@ p {
   .footer-cln-grid { grid-template-columns: 1fr; }
   .footer-cln-brand { grid-column: span 1; }
 }
+
+/* ============================================================
+   MOBILE BUTTON SIZING & RESPONSIVE CTA FIXES
+   Part 3 of master spec — clean, consistent on all screens
+   ============================================================ */
+
+/* Service hero CTA group — stack vertically on narrow screens */
+@media (max-width: 540px) {
+  .svc-hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+  .svc-hero-actions .primary,
+  .svc-hero-actions .secondary {
+    text-align: center;
+    justify-content: center;
+  }
+  .svc-hero-actions .secondary {
+    display: none; /* keep only one CTA in the hero on mobile */
+  }
+}
+
+/* CTA banner — stack buttons on small screens */
+@media (max-width: 540px) {
+  .cta-actions,
+  .cta-btns,
+  .cta-cln-btns {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  .cta-actions a,
+  .cta-btns a,
+  .cta-cln-btns a {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+/* Homepage hero nav WA button — icon-only circle on mobile */
+@media (max-width: 768px) {
+  .hero-nav-ctas .hero-nav-btn:last-of-type {
+    display: none; /* hide "WhatsApp to Book" text button; keep icon btn */
+  }
+}
+
+/* Shared nav CTA — shrink WhatsApp button to icon only below 480px */
+@media (max-width: 480px) {
+  .nav-ctas .btn-green {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 0;
+    min-width: unset;
+    overflow: hidden;
+  }
+  .nav-ctas .btn-green .btn-label,
+  .nav-ctas .btn-green span:not(svg) {
+    display: none;
+  }
+}
+
+/* Service page body — full-width content column on mobile */
+@media (max-width: 640px) {
+  .service-body-layout {
+    gap: var(--space-5);
+  }
+  .service-content {
+    min-width: 0;
+  }
+  .sidebar-card {
+    padding: 20px 16px;
+  }
+}

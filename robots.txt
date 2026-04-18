@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://cleanwarks.com/sitemap.xml
+Sitemap: https://www.cleanwarks.com/sitemap.xml
 
 Disallow: /api/
 Disallow: /_next/

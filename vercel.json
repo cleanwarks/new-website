@@ -7,7 +7,16 @@
     {"source": "/service/couch-cleaning-services/", "destination": "/sofa-cleaning-services", "permanent": true},
     {"source": "/sofa-cleaning", "destination": "/sofa-cleaning-services", "permanent": true},
     {"source": "/couch-cleaning", "destination": "/sofa-cleaning-services", "permanent": true},
-    {"source": "/couch-cleaning-services", "destination": "/sofa-cleaning-services", "permanent": true}
+    {"source": "/couch-cleaning-services", "destination": "/sofa-cleaning-services", "permanent": true},
+    {"source": "/sofa-cleaning-service", "destination": "/sofa-cleaning-services", "permanent": true},
+    {"source": "/sofa-cleaning-service/", "destination": "/sofa-cleaning-services", "permanent": true},
+    {"source": "/category/house-cleaning", "destination": "/blog-grid", "permanent": true},
+    {"source": "/category/house-cleaning/", "destination": "/blog-grid", "permanent": true},
+    {"source": "/author/fintop", "destination": "/blog-grid", "permanent": true},
+    {"source": "/author/fintop/", "destination": "/blog-grid", "permanent": true},
+    {"source": "/service/page/2", "destination": "/services", "permanent": true},
+    {"source": "/service/page/2/", "destination": "/services", "permanent": true},
+    {"source": "/blog-grid/page/:page", "destination": "/blog-grid", "permanent": true}
   ],
   "headers": [
     {

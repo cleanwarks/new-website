@@ -1453,7 +1453,7 @@ p {
   content: '';
   position: absolute;
   inset: 0;
-  background: url('https://cleanwarks.com/wp-content/uploads/2022/11/h8-cta-banner.png') center/cover;
+  background: url('/public/images/cta-banner-bg.png') center/cover;
   opacity: 0.10;
   pointer-events: none;
 }

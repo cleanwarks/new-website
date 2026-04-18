@@ -3942,3 +3942,25 @@ p {
     padding: 20px 16px;
   }
 }
+
+/* ============================================================
+   ZOHO SALESIQ — push chat widget above WhatsApp floating btn
+   WA button: bottom 24px + height 58px + 12px gap = 94px
+   ============================================================ */
+#zsiq_float,
+.zsiq_flt_rel,
+[id*="zsiq_float"],
+.siqico-chat,
+.zsiq_theme1 .zsiq_flt_rel {
+  bottom: 94px !important;
+}
+
+@media (max-width: 768px) {
+  #zsiq_float,
+  .zsiq_flt_rel,
+  [id*="zsiq_float"],
+  .siqico-chat,
+  .zsiq_theme1 .zsiq_flt_rel {
+    bottom: 90px !important;
+  }
+}

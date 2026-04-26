@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing Calculator | Clean Warks Kerala</title>
+<meta name="description" content="Get an instant price estimate for house cleaning, sofa cleaning, water tank cleaning, and pressure washing services from Clean Warks across Kerala.">
+<link rel="canonical" href="https://www.cleanwarks.com/pricing-calculator">
+<meta property="og:title" content="Pricing Calculator | Clean Warks Kerala">
+<meta property="og:description" content="Get an instant price estimate for house cleaning, sofa cleaning, water tank cleaning, and pressure washing services from Clean Warks across Kerala.">
+<meta property="og:image" content="/public/images/clean-warks-logo.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.cleanwarks.com/pricing-calculator">
+<meta property="og:site_name" content="Clean Warks">
+<meta property="og:locale" content="en_IN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" href="/public/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/public/images/favicon-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="/public/images/favicon-180x180.png">
+<meta name="msapplication-TileImage" content="/public/images/favicon-270x270.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,700;1,800&display=swap" rel="stylesheet">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3R9W3L5CZY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-3R9W3L5CZY');
+  gtag('config', 'AW-16604259654');
+</script>
+<style>
+/* ── RESET & BASE ── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Plus Jakarta Sans',sans-serif;color:#111;background:#fff;line-height:1.6;}
+img{max-width:100%;height:auto;}
+a{color:inherit;}
+
+/* ── NAV (reused from site) ── */
+.pc-hero{background:#F5F5EE;padding:0 20px;}
+.pc-nav-wrap{padding:20px 0;max-width:1160px;margin:0 auto;width:100%;}
+.pc-nav{background:rgba(255,255,255,0.97);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-radius:100px;display:flex;align-items:center;justify-content:space-between;padding:10px 14px 10px 24px;box-shadow:0 4px 24px rgba(0,0,0,0.08);}
+.pc-nav a img{height:36px;width:auto;}
+.pc-nav-links{display:flex;align-items:center;gap:28px;}
+.pc-nav-links a{font-size:0.9375rem;font-weight:500;color:#333;text-decoration:none;}
+.pc-nav-ctas{display:flex;align-items:center;gap:10px;}
+.btn-wa{background:#22C55E;color:#fff;font-size:0.9rem;font-weight:700;padding:10px 20px;border-radius:100px;text-decoration:none;display:flex;align-items:center;gap:6px;}
+.btn-book{background:#EFC93D;color:#111;font-size:0.9rem;font-weight:700;padding:10px 20px;border-radius:100px;text-decoration:none;}
+
+/* ── HERO / INTRO ── */
+.pc-intro{max-width:1160px;margin:0 auto;width:100%;padding:40px 0 48px;}
+.pc-eyebrow{font-size:0.8rem;font-weight:700;color:#22C55E;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:12px;}
+.pc-h1{font-size:clamp(1.75rem,4vw,2.75rem);font-weight:800;color:#111;line-height:1.15;letter-spacing:-0.03em;margin-bottom:12px;}
+.pc-sub{font-size:1rem;color:#555;max-width:560px;line-height:1.65;}
+
+/* ── CALCULATOR WRAPPER ── */
+.pc-calc-section{background:#F5F5EE;padding:48px 20px 80px;}
+.pc-calc-inner{max-width:720px;margin:0 auto;}
+
+/* ── CALCULATOR CSS (adapted from cleanwarksv6, colours updated) ── */
+:root{
+  --cg:#22C55E;   /* brand green */
+  --cg0:#16A34A;  /* darker green */
+  --cg1:#15803D;  /* even darker */
+  --cg4:#F0FDF4;  /* very light green */
+  --cy:#EFC93D;   /* brand yellow */
+  --cr:#D84040;--crb:#FEE2E2;
+  --ct0:#111;--ct1:#374151;--ct2:#6B7280;
+  --cbg:#F5F5EE;--csur:#FFFFFF;--cbdr:#E5EAE8;--cbdr2:#CBD5D0;
+  --rad:14px;--rads:8px;--radsm:5px;
+  --sh:0 1px 8px rgba(0,0,0,0.07);--shm:0 4px 20px rgba(0,0,0,0.11);
+}
+
+/* pincode */
+.pbar{background:var(--csur);border:1px solid var(--cbdr);border-radius:var(--rad);padding:.9rem 1.1rem;box-shadow:var(--sh);margin-bottom:12px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
+.plbl{font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--ct2);white-space:nowrap;}
+.piw{display:flex;flex:1;min-width:140px;}
+.piw input{flex:1;padding:7px 10px;border:1px solid var(--cbdr);border-radius:var(--rads);font-family:'Plus Jakarta Sans',sans-serif;font-size:14px;background:var(--cbg);color:var(--ct0);outline:none;transition:border .15s;}
+.piw input:focus{border-color:var(--cg);}
+.chip{padding:3px 10px;border-radius:99px;font-size:12px;font-weight:500;}
+.cfree{background:var(--cg4);color:var(--cg1);}
+.cpaid{background:#FEF3DC;color:#7A4F00;}
+.cout{background:var(--crb);color:var(--cr);}
+.cunk{background:#F3F4F6;color:var(--ct2);}
+
+/* admin button */
+.abtn{font-size:12px;color:var(--ct2);background:var(--csur);border:1px solid var(--cbdr2);border-radius:99px;padding:6px 14px;cursor:pointer;transition:all .15s;white-space:nowrap;font-family:'Plus Jakarta Sans',sans-serif;}
+.abtn:hover{color:var(--cg);border-color:var(--cg);}
+
+/* tabs */
+.tabs{display:flex;gap:6px;margin-bottom:12px;overflow-x:auto;padding-bottom:4px;-webkit-overflow-scrolling:touch;}
+.tabs::-webkit-scrollbar{height:0;}
+.tab{padding:8px 16px;border-radius:99px;border:1px solid var(--cbdr);font-family:'Plus Jakarta Sans',sans-serif;font-size:13px;font-weight:600;background:var(--csur);color:var(--ct2);cursor:pointer;transition:all .15s;white-space:nowrap;flex-shrink:0;}
+.tab.on{background:#111;color:white;border-color:#111;}
+.tab:hover:not(.on){border-color:var(--cg);color:var(--cg);}
+.svc{display:none;}.svc.on{display:block;}
+
+/* card */
+.card{background:var(--csur);border:1px solid var(--cbdr);border-radius:var(--rad);padding:1.1rem 1.2rem;box-shadow:var(--sh);margin-top:10px;}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+@media(max-width:480px){.two{grid-template-columns:1fr;}}
+
+/* label */
+.lbl{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--ct2);margin-bottom:7px;display:block;}
+.grp-lbl{font-size:11px;font-weight:600;color:var(--ct2);margin:14px 0 7px;padding-top:12px;border-top:1px solid var(--cbdr);letter-spacing:.02em;}
+.grp-lbl:first-of-type{margin-top:0;padding-top:0;border-top:none;}
+
+/* inputs */
+input[type=number],input[type=text],input[type=password]{width:100%;padding:9px 11px;border:1px solid var(--cbdr);border-radius:var(--rads);font-family:'Plus Jakarta Sans',sans-serif;font-size:14px;background:var(--cbg);color:var(--ct0);outline:none;transition:border .15s;}
+input:focus{border-color:var(--cg);}
+.iw{position:relative;}
+.isfx{position:absolute;right:10px;top:50%;transform:translateY(-50%);font-size:12px;color:var(--ct2);pointer-events:none;}
+
+/* segment */
+.seg{display:flex;border:1px solid var(--cbdr);border-radius:var(--rads);overflow:hidden;}
+.seg button{flex:1;padding:8px 5px;font-size:12px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:500;border:none;background:var(--cbg);color:var(--ct2);cursor:pointer;transition:all .15s;line-height:1.3;}
+.seg button:not(:last-child){border-right:1px solid var(--cbdr);}
+.seg button.on{background:#111;color:white;font-weight:600;}
+
+/* spinner */
+.spin{display:flex;align-items:center;border:1px solid var(--cbdr);border-radius:var(--rads);overflow:hidden;}
+.spb{width:36px;height:36px;border:none;background:var(--cbg);color:var(--ct0);font-size:19px;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:'Plus Jakarta Sans',sans-serif;}
+.spb:hover{background:var(--cg4);}
+.spv{flex:1;text-align:center;font-size:15px;font-weight:600;background:var(--csur);padding:7px 0;border-left:1px solid var(--cbdr);border-right:1px solid var(--cbdr);}
+
+/* rate chip */
+.rrow2{display:flex;align-items:center;gap:8px;margin-top:9px;flex-wrap:wrap;}
+.rchip{display:inline-flex;align-items:center;gap:5px;font-size:12.5px;font-weight:600;padding:3px 12px;border-radius:99px;background:var(--cg4);color:var(--cg1);}
+.rdot{width:6px;height:6px;border-radius:50%;background:var(--cg);flex-shrink:0;}
+
+/* addon rows */
+.addon-list{display:flex;flex-direction:column;gap:0;}
+.ar{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--cbdr);user-select:none;}
+.ar:last-child{border-bottom:none;padding-bottom:0;}
+.ar:first-child{padding-top:0;}
+.ar.clickable{cursor:pointer;}
+.ar.clickable:hover .a-tog{border-color:var(--cg);}
+.a-tog{width:20px;height:20px;border-radius:50%;border:1.5px solid var(--cbdr2);background:var(--csur);flex-shrink:0;display:flex;align-items:center;justify-content:center;transition:all .12s;}
+.ar.on .a-tog{background:var(--cg);border-color:var(--cg);}
+.ar.on .a-tog::after{content:"";width:9px;height:5px;border-left:2px solid white;border-bottom:2px solid white;transform:rotate(-45deg) translateY(-1px);display:block;}
+.ar.incl .a-tog{background:var(--cg0);border-color:var(--cg0);}
+.ar.incl .a-tog::after{content:"";width:9px;height:5px;border-left:2px solid white;border-bottom:2px solid white;transform:rotate(-45deg) translateY(-1px);display:block;}
+.a-text{flex:1;min-width:0;}
+.a-name{font-size:13px;font-weight:600;color:var(--ct0);line-height:1.3;}
+.a-sub{font-size:11.5px;color:var(--ct2);margin-top:1px;line-height:1.4;}
+.ar.incl .a-name{color:var(--cg1);}
+.ar.incl .a-sub{color:var(--cg0);}
+.ar.on .a-sub{color:var(--ct2);}
+.a-right{flex-shrink:0;display:flex;align-items:center;gap:7px;}
+.a-flat{font-size:13px;font-weight:500;color:var(--ct2);}
+.ar.on .a-flat{color:var(--cg);}
+.a-ibdg{font-size:11px;padding:2px 8px;border-radius:99px;background:var(--cg4);color:var(--cg1);font-weight:600;}
+.uc{display:flex;align-items:center;border:1px solid var(--cbdr2);border-radius:var(--radsm);overflow:hidden;background:var(--csur);}
+.uc-b{width:26px;height:26px;border:none;background:transparent;color:var(--ct0);font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-family:'Plus Jakarta Sans',sans-serif;}
+.uc-b:hover{background:var(--cg4);}
+.uc-v{min-width:22px;text-align:center;font-size:13px;font-weight:600;padding:0 3px;}
+.a-upr{font-size:12px;color:var(--cg);white-space:nowrap;}
+
+/* mattress / bathroom sub-rows */
+.mat-rows,.bth-rows{padding:8px 0 4px 30px;display:flex;flex-direction:column;gap:8px;border-bottom:1px solid var(--cbdr);}
+.mat-row,.bth-row{display:flex;align-items:center;justify-content:space-between;gap:10px;}
+.mat-lbl,.bth-lbl{font-size:13px;color:var(--ct1);flex:1;}
+.mat-price,.bth-price{font-size:12px;color:var(--ct2);margin-right:8px;}
+
+/* preset grid */
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(62px,1fr));gap:8px;}
+.pbtn{padding:9px 4px;border:1px solid var(--cbdr);border-radius:var(--rads);font-family:'Plus Jakarta Sans',sans-serif;font-size:13px;font-weight:500;background:var(--cbg);color:var(--ct1);cursor:pointer;text-align:center;transition:all .15s;}
+.pbtn.on{background:#111;color:white;border-color:#111;}
+.pbtn:hover:not(.on){border-color:var(--cg);}
+
+/* type cards */
+.tcg{display:grid;gap:8px;margin-top:8px;}
+.tc2{grid-template-columns:1fr 1fr;}.tc3{grid-template-columns:1fr 1fr 1fr;}
+@media(max-width:400px){.tc3{grid-template-columns:1fr 1fr;}}
+.tc{padding:10px 12px;border:1px solid var(--cbdr);border-radius:var(--rads);cursor:pointer;font-size:13px;background:var(--cbg);transition:all .15s;}
+.tc.on{border-color:var(--cg);background:var(--cg4);color:var(--cg1);}
+.tcn{font-weight:600;margin-bottom:2px;}.tcp{font-size:12px;color:var(--ct2);}.tc.on .tcp{color:var(--cg0);}
+
+/* result */
+.res{background:#111;border-radius:var(--rad);padding:1.4rem 1.2rem;color:white;box-shadow:var(--shm);margin-top:10px;}
+.rrows{margin-bottom:14px;}
+.rrow{display:flex;justify-content:space-between;align-items:center;padding:4px 0;font-size:13px;color:rgba(255,255,255,.6);}
+.rrow .rv{color:rgba(255,255,255,.88);}
+.rhr{border:none;border-top:1px solid rgba(255,255,255,.12);margin:10px 0;}
+.rtot{display:flex;justify-content:space-between;align-items:baseline;}
+.rtlbl{font-size:13px;color:rgba(255,255,255,.65);}
+.rtamt{font-size:38px;font-weight:800;color:#EFC93D;line-height:1;}
+.rbgs{display:flex;gap:6px;margin-top:10px;flex-wrap:wrap;}
+.rb{font-size:11px;padding:3px 9px;border-radius:99px;font-weight:600;}
+.rb-t{background:rgba(255,255,255,.12);color:rgba(255,255,255,.85);}
+.rb-m{background:#FEF3DC;color:#7A4F00;}
+.rb-d{background:rgba(239,201,61,.18);color:#EFC93D;}
+.rnote{font-size:12px;color:rgba(255,255,255,.45);margin-top:9px;line-height:1.55;}
+
+/* info box */
+.ibox{background:#FEF3DC;border:1px solid #F5A623;border-radius:var(--rads);padding:9px 12px;font-size:12.5px;color:#7A4F00;line-height:1.6;margin-top:10px;}
+
+/* included banner */
+.incl-banner{font-size:12px;color:var(--cg1);background:var(--cg4);border:1px solid var(--cg);border-radius:var(--rads);padding:8px 12px;margin-bottom:10px;line-height:1.6;display:none;}
+.incl-banner.show{display:block;}
+
+/* admin overlay */
+.ov{position:fixed;inset:0;background:rgba(0,0,0,.48);z-index:200;display:none;align-items:flex-start;justify-content:center;padding:1.5rem 1rem;overflow-y:auto;}
+.ov.open{display:flex;}
+.ap{background:var(--csur);border-radius:var(--rad);width:100%;max-width:640px;margin:auto;}
+.aphdr{display:flex;align-items:center;justify-content:space-between;padding:1.1rem 1.4rem;border-bottom:1px solid var(--cbdr);}
+.aptit{font-size:15px;font-weight:700;}
+.apcls{background:none;border:none;font-size:22px;cursor:pointer;color:var(--ct2);line-height:1;padding:2px 6px;border-radius:6px;font-family:'Plus Jakarta Sans',sans-serif;}
+.apcls:hover{background:var(--cbg);}
+.apbdy{padding:1.4rem;max-height:72vh;overflow-y:auto;}
+.aps{margin-bottom:1.5rem;}
+.apst{font-size:11px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--cg);margin-bottom:10px;padding-bottom:5px;border-bottom:1px solid var(--cg4);}
+.apr{display:grid;gap:10px;margin-bottom:10px;}
+.ap2{grid-template-columns:1fr 1fr;}.ap3{grid-template-columns:1fr 1fr 1fr;}.ap4{grid-template-columns:1fr 1fr 1fr 1fr;}
+@media(max-width:500px){.ap3{grid-template-columns:1fr 1fr;}.ap4{grid-template-columns:1fr 1fr;}}
+.apf label{font-size:11px;color:var(--ct2);display:block;margin-bottom:3px;}
+.apf input{padding:7px 10px;font-size:13px;}
+.apft{display:flex;align-items:center;justify-content:space-between;padding:.9rem 1.4rem;border-top:1px solid var(--cbdr);gap:10px;flex-wrap:wrap;}
+.bsv{background:#22C55E;color:white;border:none;border-radius:var(--rads);padding:9px 22px;font-family:'Plus Jakarta Sans',sans-serif;font-size:14px;font-weight:700;cursor:pointer;transition:background .15s;}
+.bsv:hover{background:#16A34A;}
+.brs{background:none;border:1px solid var(--cbdr);color:var(--ct2);border-radius:var(--rads);padding:9px 15px;font-family:'Plus Jakarta Sans',sans-serif;font-size:13px;cursor:pointer;}
+.brs:hover{border-color:var(--cr);color:var(--cr);}
+.svm{font-size:12px;color:var(--cg);display:none;font-weight:700;}.svm.show{display:block;}
+.lbx{padding:1.4rem;}.lbx p{font-size:13px;color:var(--ct2);margin-bottom:1rem;}
+.llr{display:flex;gap:8px;}.llr input{flex:1;}
+.blg{background:#22C55E;color:white;border:none;border-radius:var(--rads);padding:9px 20px;font-family:'Plus Jakarta Sans',sans-serif;font-size:14px;font-weight:700;cursor:pointer;white-space:nowrap;}
+.lerr{font-size:12px;color:var(--cr);margin-top:6px;display:none;}
+
+/* admin top bar */
+.calc-topbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;flex-wrap:wrap;gap:12px;}
+.calc-topbar-text h2{font-size:1.25rem;font-weight:800;color:#111;line-height:1.2;}
+.calc-topbar-text p{font-size:0.8125rem;color:#666;margin-top:2px;}
+
+/* ── FOOTER ── */
+.pc-footer{background:#fff;overflow:hidden;}
+.pc-footer-wm{text-align:center;padding:20px 0 0;pointer-events:none;user-select:none;overflow:hidden;}
+.pc-footer-wm span{font-family:'Playfair Display',Georgia,serif;font-style:italic;font-weight:800;font-size:clamp(60px,14vw,180px);color:rgba(0,0,0,0.055);white-space:nowrap;display:block;letter-spacing:-0.02em;line-height:0.9;}
+.pc-footer-grid{max-width:1160px;margin:0 auto;padding:0 24px 32px;}
+.pc-footer-cols{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px;padding-top:40px;margin-bottom:40px;}
+@media(max-width:900px){.pc-footer-cols{grid-template-columns:1fr 1fr;}.pc-footer-brand{grid-column:span 2;}.pc-nav-links{display:none;}}
+@media(max-width:540px){.pc-footer-cols{grid-template-columns:1fr;}.pc-footer-brand{grid-column:span 1;}}
+.pc-footer-logo{height:40px;width:auto;display:block;margin-bottom:14px;}
+.pc-footer-desc{font-size:0.875rem;color:#666;line-height:1.7;margin-bottom:18px;max-width:260px;}
+.pc-footer-contacts{display:flex;flex-direction:column;gap:8px;}
+.pc-footer-contacts a{display:flex;align-items:center;gap:8px;font-size:0.875rem;color:#444;text-decoration:none;}
+.pc-footer-contacts a:hover{color:#22C55E;}
+.pc-footer-contacts svg{width:14px;height:14px;color:#22C55E;flex-shrink:0;}
+.pc-footer-col h4{font-size:0.7rem;font-weight:700;color:#111;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:14px;}
+.pc-footer-col ul{list-style:none;display:flex;flex-direction:column;gap:8px;}
+.pc-footer-col ul a{font-size:0.875rem;color:#666;text-decoration:none;}
+.pc-footer-col ul a:hover{color:#111;}
+.pc-footer-bottom{border-top:1px solid #eee;padding-top:20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;}
+.pc-footer-bottom p,.pc-footer-bottom-links a{font-size:0.8rem;color:#888;text-decoration:none;}
+.pc-footer-bottom-links{display:flex;gap:16px;}
+
+/* ── FLOAT WHATSAPP ── */
+.float-wa{position:fixed;bottom:24px;right:24px;width:56px;height:56px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;z-index:90;box-shadow:0 6px 20px rgba(37,211,102,0.4);transition:transform 0.2s;text-decoration:none;}
+.float-wa:hover{transform:scale(1.08);}
+.float-wa svg{width:26px;height:26px;}
+
+/* CTA section */
+.pc-cta{background:#111;padding:clamp(40px,6vw,64px) 24px;}
+.pc-cta-inner{max-width:700px;margin:0 auto;text-align:center;}
+.pc-cta-inner h2{font-size:clamp(1.5rem,3vw,2rem);font-weight:800;color:#fff;line-height:1.2;margin-bottom:12px;}
+.pc-cta-inner p{font-size:1rem;color:#aaa;line-height:1.65;margin-bottom:28px;}
+.pc-cta-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;}
+.pc-cta-btns a{display:inline-flex;align-items:center;gap:8px;font-size:0.9375rem;font-weight:700;padding:13px 28px;border-radius:100px;text-decoration:none;transition:transform 0.2s;}
+.pc-cta-btns a:hover{transform:translateY(-2px);}
+.pc-cta-btns .primary{background:#EFC93D;color:#111;}
+.pc-cta-btns .outline{background:transparent;border:2px solid rgba(255,255,255,0.3);color:#fff;}
+
+@media(max-width:420px){
+  .pc-nav-links{display:none;}
+  .pbar{flex-direction:column;align-items:flex-start;gap:8px;}
+  .piw{width:100%;min-width:0;}
+  .piw input{width:100%;}
+  #pin-result{width:100%;}
+  .card{padding:.9rem 1rem;}
+  .two{grid-template-columns:1fr;}
+  .seg button{font-size:11px;padding:7px 3px;}
+  .rtamt{font-size:30px;}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<section class="pc-hero">
+  <div class="pc-nav-wrap">
+    <nav class="pc-nav">
+      <a href="../"><img src="/public/images/clean-warks-logo.png" alt="Clean Warks"></a>
+      <div class="pc-nav-links">
+        <a href="../">Home</a>
+        <a href="../about-us">About Us</a>
+        <a href="../services">Services</a>
+        <a href="../blog-grid">Blog</a>
+        <a href="../contact">Contact</a>
+      </div>
+      <div class="pc-nav-ctas">
+        <a href="https://wa.me/918304000046" class="btn-wa">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.825 9.825 0 0 0 12.04 2z"/></svg>
+          WhatsApp
+        </a>
+        <a href="tel:+918304000046" class="btn-book">Call Now</a>
+      </div>
+    </nav>
+  </div>
+  <div class="pc-intro">
+    <p class="pc-eyebrow">Pricing Calculator</p>
+    <h1 class="pc-h1">Get an Instant Price Estimate</h1>
+    <p class="pc-sub">Transparent, no-surprise pricing for every service. Select your service, enter your details, and get an instant estimate — no sign-up required.</p>
+  </div>
+</section>
+
+<!-- CALCULATOR -->
+<section class="pc-calc-section">
+  <div class="pc-calc-inner">
+
+    <!-- Top bar with admin button -->
+    <div class="calc-topbar">
+      <div class="calc-topbar-text">
+        <p style="font-size:0.75rem;color:#888;">All prices are estimates. Final quote confirmed at booking.</p>
+      </div>
+      <button class="abtn" onclick="openAdmin()">⚙ Edit rates</button>
+    </div>
+
+    <!-- PINCODE -->
+    <div class="pbar">
+      <span class="plbl">Customer location</span>
+      <div class="piw"><input type="text" id="pincode" maxlength="6" placeholder="Enter pincode" oninput="calcDist()"/></div>
+      <div id="pin-result"><span class="chip cunk">Enter pincode for travel charge</span></div>
+    </div>
+
+    <!-- TABS -->
+    <div class="tabs">
+      <button class="tab on" onclick="showTab('house',this)">🏠 House cleaning</button>
+      <button class="tab"    onclick="showTab('sofa',this)">🛋 Sofa &amp; upholstery</button>
+      <button class="tab"    onclick="showTab('tank',this)">💧 Water tank</button>
+      <button class="tab"    onclick="showTab('pw',this)">🔫 Pressure wash</button>
+    </div>
+
+    <!-- ═══════════ HOUSE CLEANING ═══════════ -->
+    <div class="svc on" id="svc-house">
+      <div class="two">
+        <div class="card">
+          <span class="lbl">Area</span>
+          <div class="iw"><input type="number" id="h-sqft" value="1500" min="100" oninput="calcHouse()"/><span class="isfx">sqft</span></div>
+        </div>
+        <div class="card">
+          <span class="lbl">Rooms</span>
+          <div class="spin">
+            <button class="spb" onclick="spinRoom(-1)">−</button>
+            <div class="spv" id="h-rm">4</div>
+            <button class="spb" onclick="spinRoom(1)">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="lbl">Cleaning type</span>
+        <div class="seg" id="ht-seg">
+          <button class="on" onclick="setHT(0,this)">Regular</button>
+          <button onclick="setHT(1,this)">Deep clean</button>
+          <button onclick="setHT(2,this)">Post-construction</button>
+          <button onclick="setHT(3,this)">Move-in / out</button>
+        </div>
+        <div class="rrow2"><div class="rchip"><span class="rdot"></span><span id="h-rl">₹4 / sqft</span></div></div>
+      </div>
+
+      <div class="card" id="h-fc">
+        <span class="lbl">Furnishing</span>
+        <div class="seg" id="hf-seg">
+          <button class="on" onclick="setHF(0,this)">Unfurnished</button>
+          <button onclick="setHF(1,this)">Semi-furnished</button>
+          <button onclick="setHF(2,this)">Fully furnished</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="lbl">Add-ons</span>
+        <div class="incl-banner" id="h-incl">
+          ✓ Deep clean includes: kitchen, all windows, ceiling fans, light fixtures, AC filter cleaning, balcony — at no extra charge.
+        </div>
+        <div id="h-addons"></div>
+      </div>
+
+      <div class="res" id="h-res"></div>
+    </div>
+
+    <!-- ═══════════ SOFA & UPHOLSTERY ═══════════ -->
+    <div class="svc" id="svc-sofa">
+      <div class="card">
+        <span class="lbl">Item type</span>
+        <div class="seg" id="si-seg">
+          <button class="on" onclick="setSI(0,this)">Sofa</button>
+          <button onclick="setSI(1,this)">Dining chairs</button>
+          <button onclick="setSI(2,this)">Car interior</button>
+        </div>
+      </div>
+
+      <div id="sp-sofa">
+        <div class="card">
+          <span class="lbl">Number of seats</span>
+          <div class="pgrid" id="ss-grid">
+            <button class="pbtn" onclick="setSS(1,this)">1</button><button class="pbtn" onclick="setSS(2,this)">2</button>
+            <button class="pbtn on" onclick="setSS(3,this)">3</button><button class="pbtn" onclick="setSS(4,this)">4</button>
+            <button class="pbtn" onclick="setSS(5,this)">5</button><button class="pbtn" onclick="setSS(6,this)">6</button>
+            <button class="pbtn" onclick="setSS(7,this)">7</button><button class="pbtn" onclick="setSS(8,this)">8</button>
+            <button class="pbtn" onclick="setSS(9,this)">9</button><button class="pbtn" onclick="setSS(10,this)">10</button>
+            <button class="pbtn" onclick="setSS(12,this)">12</button><button class="pbtn" onclick="setSS(0,this)">Custom</button>
+          </div>
+          <div id="ss-cw" style="margin-top:10px;display:none;"><div class="iw"><input type="number" id="ss-cv" min="1" placeholder="Seats" oninput="calcSofa()"/><span class="isfx">seats</span></div></div>
+        </div>
+        <div class="card">
+          <span class="lbl">Material</span>
+          <div class="tcg tc2">
+            <div class="tc on" id="sm-fab" onclick="setSM('fabric',this)"><div class="tcn">Fabric / cloth</div><div class="tcp" id="sfab-p">₹400 / seat</div></div>
+            <div class="tc" id="sm-lea" onclick="setSM('leather',this)"><div class="tcn">Leather / rexine</div><div class="tcp" id="slea-p">₹500 / seat</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="sp-dining" style="display:none;">
+        <div class="card">
+          <span class="lbl">Number of dining chairs</span>
+          <div class="pgrid" id="dc-grid">
+            <button class="pbtn" onclick="setDC(2,this)">2</button><button class="pbtn" onclick="setDC(4,this)">4</button>
+            <button class="pbtn on" onclick="setDC(6,this)">6</button><button class="pbtn" onclick="setDC(8,this)">8</button>
+            <button class="pbtn" onclick="setDC(10,this)">10</button><button class="pbtn" onclick="setDC(12,this)">12</button>
+            <button class="pbtn" onclick="setDC(0,this)">Custom</button>
+          </div>
+          <div id="dc-cw" style="margin-top:10px;display:none;"><div class="iw"><input type="number" id="dc-cv" min="1" placeholder="Chairs" oninput="calcSofa()"/><span class="isfx">chairs</span></div></div>
+          <div class="ibox" style="margin-top:10px;">₹100 per dining chair · Minimum charge ₹500</div>
+        </div>
+      </div>
+
+      <div id="sp-car" style="display:none;">
+        <div class="card">
+          <span class="lbl">Vehicle type</span>
+          <div class="tcg tc3">
+            <div class="tc on" id="cv-h" onclick="setCV('hatch',this)"><div class="tcn">Hatchback</div><div class="tcp" id="cv-hp">₹1,800</div></div>
+            <div class="tc" id="cv-s" onclick="setCV('sedan',this)"><div class="tcn">Sedan / MUV</div><div class="tcp" id="cv-sp">₹2,200</div></div>
+            <div class="tc" id="cv-suv" onclick="setCV('suv',this)"><div class="tcn">SUV / XUV</div><div class="tcp" id="cv-suvp">₹2,800</div></div>
+          </div>
+        </div>
+        <div class="card">
+          <span class="lbl">Car add-ons</span>
+          <div class="addon-list">
+            <div class="ar clickable" id="ca-seat" onclick="togCA(this,'seat')"><div class="a-tog"></div><div class="a-text"><div class="a-name">Seat shampoo wash</div><div class="a-sub">All seats</div></div><div class="a-right"><span class="a-flat" id="cap-seat">+₹600</span></div></div>
+            <div class="ar clickable" id="ca-carp" onclick="togCA(this,'carp')"><div class="a-tog"></div><div class="a-text"><div class="a-name">Floor carpet shampoo</div><div class="a-sub">Full floor area</div></div><div class="a-right"><span class="a-flat" id="cap-carp">+₹400</span></div></div>
+            <div class="ar clickable" id="ca-ac" onclick="togCA(this,'ac')"><div class="a-tog"></div><div class="a-text"><div class="a-name">AC vent cleaning</div><div class="a-sub">Vent dust removal</div></div><div class="a-right"><span class="a-flat" id="cap-ac">+₹300</span></div></div>
+            <div class="ar clickable" id="ca-boot" onclick="togCA(this,'boot')"><div class="a-tog"></div><div class="a-text"><div class="a-name">Boot / dicky clean</div><div class="a-sub">Vacuum + wipe</div></div><div class="a-right"><span class="a-flat" id="cap-boot">+₹250</span></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="res" id="s-res"></div>
+    </div>
+
+    <!-- ═══════════ WATER TANK ═══════════ -->
+    <div class="svc" id="svc-tank">
+      <div class="card">
+        <span class="lbl">Tank capacity</span>
+        <div class="pgrid" id="tk-grid">
+          <button class="pbtn" onclick="setTK(500,this)">500 L</button>
+          <button class="pbtn on" onclick="setTK(1000,this)">1,000 L</button>
+          <button class="pbtn" onclick="setTK(2000,this)">2,000 L</button>
+          <button class="pbtn" onclick="setTK(5000,this)">5,000 L</button>
+          <button class="pbtn" onclick="setTK(10000,this)">10,000 L</button>
+          <button class="pbtn" onclick="setTK(0,this)">Custom</button>
+        </div>
+        <div id="tk-cw" style="margin-top:10px;display:none;"><div class="iw"><input type="number" id="tk-cv" min="100" placeholder="Litres" oninput="calcTank()"/><span class="isfx">litres</span></div></div>
+      </div>
+      <div class="card">
+        <span class="lbl">Tank type</span>
+        <div class="seg" id="tt-seg">
+          <button class="on" onclick="setTT(0,this)">Overhead (plastic)</button>
+          <button onclick="setTT(1,this)">Underground / sump</button>
+          <button onclick="setTT(2,this)">Cement / tile</button>
+        </div>
+        <div class="rrow2"><div class="rchip"><span class="rdot"></span><span id="tk-rl">₹1.50 / litre</span></div></div>
+      </div>
+      <div class="res" id="tk-res"></div>
+    </div>
+
+    <!-- ═══════════ PRESSURE WASH ═══════════ -->
+    <div class="svc" id="svc-pw">
+      <div class="card">
+        <span class="lbl">Area</span>
+        <div class="iw"><input type="number" id="pw-sqft" value="300" min="50" oninput="calcPW()"/><span class="isfx">sqft</span></div>
+      </div>
+      <div class="card">
+        <span class="lbl">Surface type</span>
+        <div class="seg" id="pw-seg">
+          <button class="on" onclick="setPWT(0,this)">Interlock / paver</button>
+          <button onclick="setPWT(1,this)">Terrace / roof</button>
+          <button onclick="setPWT(2,this)">Compound wall</button>
+        </div>
+        <div class="rrow2"><div class="rchip"><span class="rdot"></span><span id="pw-rl">₹7 / sqft</span></div></div>
+      </div>
+      <div class="ibox" id="pw-ibox">Interlock: ₹7/sqft · Terrace: ₹8/sqft · Compound wall: ₹9/sqft · Minimum ₹2,000</div>
+      <div class="res" id="pw-res"></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="pc-cta">
+  <div class="pc-cta-inner">
+    <h2>Ready to Book Your Cleaning?</h2>
+    <p>Call or WhatsApp us to confirm your slot. We respond within 2 hours.</p>
+    <div class="pc-cta-btns">
+      <a href="tel:+918304000046" class="primary">Call 8304000046</a>
+      <a href="https://wa.me/918304000046" class="outline">WhatsApp Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="pc-footer">
+  <div class="pc-footer-wm" aria-hidden="true"><span>Clean Warks</span></div>
+  <div class="pc-footer-grid">
+    <div class="pc-footer-cols">
+      <div class="pc-footer-brand">
+        <img src="/public/images/clean-warks-logo.png" alt="Clean Warks" class="pc-footer-logo">
+        <p class="pc-footer-desc">Premier cleaning services across Kerala and Bangalore. Trusted by 5,000+ homes and offices since 2020.</p>
+        <div class="pc-footer-contacts">
+          <a href="tel:+918304000046"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Kerala: 8304000046</a>
+          <a href="tel:+917034455665"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Bangalore: 7034455665</a>
+          <a href="mailto:cleanwarks@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> cleanwarks@gmail.com</a>
+        </div>
+      </div>
+      <div class="pc-footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="../service/house-cleaning-services">House Cleaning</a></li>
+          <li><a href="../service/deep-cleaning-services">Deep Cleaning</a></li>
+          <li><a href="../service/bathroom-cleaning-services">Bathroom</a></li>
+          <li><a href="../service/kitchen-cleaning-services">Kitchen</a></li>
+          <li><a href="../sofa-cleaning-services">Sofa &amp; Couch</a></li>
+          <li><a href="../sofa-cleaning-bangalore">Sofa Cleaning Bangalore</a></li>
+          <li><a href="../sump-cleaning-bangalore">Sump Cleaning Bangalore</a></li>
+          <li><a href="../service/water-tank-cleaning-services">Water Tank</a></li>
+          <li><a href="../service/carpet-cleaning-services">Carpet</a></li>
+          <li><a href="../service/office-cleaning-services">Office</a></li>
+          <li><a href="../service/window-cleaning-services">Window</a></li>
+          <li><a href="../service/pressure-washing-services">Pressure Washing</a></li>
+        </ul>
+      </div>
+      <div class="pc-footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="../about-us">About Us</a></li>
+          <li><a href="../services">All Services</a></li>
+          <li><a href="../contact">Contact</a></li>
+          <li><a href="../blog-grid">Blog</a></li>
+          <li><a href="https://wa.me/918304000046?text=Hi%2C%20I%27m%20looking%20for%20cleaning%20services.">WhatsApp to Book</a></li>
+        </ul>
+      </div>
+      <div class="pc-footer-col">
+        <h4>Locations</h4>
+        <ul>
+          <li><a href="/contact/#kochi">Kochi, Kerala</a></li>
+          <li><a href="/contact/#kottayam">Kottayam, Kerala</a></li>
+          <li><a href="/contact/#pathanamthitta">Pathanamthitta</a></li>
+          <li><a href="/contact/#alappuzha">Alappuzha</a></li>
+          <li><a href="/contact/#bangalore">Bangalore</a></li>
+        </ul>
+        <h4 style="margin-top:20px;">Legal</h4>
+        <ul>
+          <li><a href="../privacy-policy">Privacy Policy</a></li>
+          <li><a href="../refund-policy">Refund Policy</a></li>
+          <li><a href="../terms-conditions">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pc-footer-bottom">
+      <p>© <span class="js-year">2026</span> Clean Warks. All rights reserved. Kerala's premier cleaning service.</p>
+      <div class="pc-footer-bottom-links">
+        <a href="../privacy-policy">Privacy</a>
+        <a href="../refund-policy">Refund</a>
+        <a href="../terms-conditions">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOAT WHATSAPP -->
+<a href="https://wa.me/918304000046" class="float-wa" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.825 9.825 0 0 0 12.04 2zm5.07 14.07c-.21.59-1.04 1.08-1.69 1.22-.44.09-1.02.17-2.97-.62-2.49-1.03-4.11-3.56-4.23-3.72-.13-.16-1-1.34-1-2.55s.64-1.81.86-2.06c.22-.25.49-.31.65-.31s.32 0 .47.01c.15 0 .35-.06.55.42.21.5.71 1.71.78 1.84.06.13.1.28.02.45-.09.16-.13.27-.25.42-.13.16-.27.35-.38.47-.13.13-.26.27-.11.53.15.25.66 1.09 1.42 1.77.98.87 1.81 1.14 2.07 1.27.26.13.41.11.56-.06.16-.18.65-.76.83-1.02.18-.26.35-.21.59-.13.24.09 1.54.73 1.81.86.27.13.45.2.51.31.07.11.07.62-.14 1.21z"/></svg>
+</a>
+
+<!-- ADMIN OVERLAY -->
+<div class="ov" id="ov">
+  <div class="ap">
+    <div id="lv">
+      <div class="aphdr"><span class="aptit">Admin access</span><button class="apcls" onclick="closeAdmin()">×</button></div>
+      <div class="lbx">
+        <p>Enter the admin password to edit all rates and settings.</p>
+        <div class="llr"><input type="password" id="pw-in" placeholder="Password" onkeydown="if(event.key==='Enter')doLogin()"/><button class="blg" onclick="doLogin()">Enter</button></div>
+        <div class="lerr" id="lerr">Incorrect password.</div>
+      </div>
+    </div>
+    <div id="sv" style="display:none;">
+      <div class="aphdr"><span class="aptit">Edit rates &amp; settings</span><button class="apcls" onclick="closeAdmin()">×</button></div>
+      <div class="apbdy">
+
+        <div class="aps"><div class="apst">House cleaning — base rates (₹/sqft)</div>
+          <div class="apr ap2"><div class="apf"><label>Regular (all furnish types)</label><input type="number" id="c-reg" step="0.5"/></div></div>
+          <div style="font-size:11px;color:var(--ct2);margin:6px 0 5px;">Deep clean</div>
+          <div class="apr ap3"><div class="apf"><label>Unfurnished</label><input type="number" id="c-du" step="0.5"/></div><div class="apf"><label>Semi-furnished</label><input type="number" id="c-ds" step="0.5"/></div><div class="apf"><label>Fully furnished</label><input type="number" id="c-df" step="0.5"/></div></div>
+          <div style="font-size:11px;color:var(--ct2);margin:6px 0 5px;">Post-construction</div>
+          <div class="apr ap2"><div class="apf"><label>Rate (₹/sqft)</label><input type="number" id="c-post" step="0.5"/></div></div>
+          <div style="font-size:11px;color:var(--ct2);margin:6px 0 5px;">Move-in / out</div>
+          <div class="apr ap3"><div class="apf"><label>Unfurnished</label><input type="number" id="c-mu" step="0.5"/></div><div class="apf"><label>Semi-furnished</label><input type="number" id="c-ms" step="0.5"/></div><div class="apf"><label>Fully furnished</label><input type="number" id="c-mf" step="0.5"/></div></div>
+        </div>
+
+        <div class="aps"><div class="apst">Pricing rules</div>
+          <div class="apr ap2"><div class="apf"><label>Minimum charge (₹)</label><input type="number" id="c-mc"/></div><div class="apf"><label>Apply below (sqft)</label><input type="number" id="c-msq"/></div></div>
+          <div class="apr ap4"><div class="apf"><label>Tier B from (sqft)</label><input type="number" id="c-tb"/></div><div class="apf"><label>Tier B discount (₹)</label><input type="number" id="c-tbd" step="0.25"/></div><div class="apf"><label>Tier C from (sqft)</label><input type="number" id="c-tc"/></div><div class="apf"><label>Tier C discount (₹)</label><input type="number" id="c-tcd" step="0.25"/></div></div>
+          <div class="apr ap2"><div class="apf"><label>Sqft per expected room</label><input type="number" id="c-rsq"/></div><div class="apf"><label>Extra room charge (₹)</label><input type="number" id="c-rch"/></div></div>
+        </div>
+
+        <div class="aps"><div class="apst">House add-ons</div>
+          <div style="font-size:11px;color:var(--ct2);margin-bottom:6px;">Per-count add-ons (₹ each)</div>
+          <div class="apr ap4">
+            <div class="apf"><label>Window (standard)</label><input type="number" id="c-ws"/></div>
+            <div class="apf"><label>Window (large/sliding)</label><input type="number" id="c-wl"/></div>
+            <div class="apf"><label>Balcony (each)</label><input type="number" id="c-bal"/></div>
+            <div class="apf"><label>Ceiling fan (each)</label><input type="number" id="c-fan"/></div>
+          </div>
+          <div class="apr ap4">
+            <div class="apf"><label>Light fixture (each)</label><input type="number" id="c-fix"/></div>
+            <div class="apf"><label>Extra AC unit (each)</label><input type="number" id="c-acu"/></div>
+            <div class="apf"><label>Extra bathroom std (₹)</label><input type="number" id="c-bths"/></div>
+            <div class="apf"><label>Extra bathroom att (₹)</label><input type="number" id="c-btha"/></div>
+          </div>
+          <div style="font-size:11px;color:var(--ct2);margin:8px 0 5px;">Flat add-ons (₹ per job)</div>
+          <div class="apr ap4">
+            <div class="apf"><label>Kitchen deep clean</label><input type="number" id="c-kit"/></div>
+            <div class="apf"><label>Carpet shampoo</label><input type="number" id="c-carp"/></div>
+            <div class="apf"><label>Terrace (sweep/mop)</label><input type="number" id="c-ter"/></div>
+          </div>
+          <div style="font-size:11px;color:var(--ct2);margin:8px 0 5px;">Mattress shampoo wash (₹ each)</div>
+          <div class="apr ap3">
+            <div class="apf"><label>Single size</label><input type="number" id="c-mats"/></div>
+            <div class="apf"><label>Double size</label><input type="number" id="c-matd"/></div>
+            <div class="apf"><label>Queen / King size</label><input type="number" id="c-matq"/></div>
+          </div>
+        </div>
+
+        <div class="aps"><div class="apst">Sofa shampoo wash</div>
+          <div class="apr ap3"><div class="apf"><label>Fabric (₹/seat)</label><input type="number" id="c-sf"/></div><div class="apf"><label>Leather (₹/seat)</label><input type="number" id="c-sl"/></div><div class="apf"><label>Minimum charge (₹)</label><input type="number" id="c-sm"/></div></div>
+        </div>
+
+        <div class="aps"><div class="apst">Dining chairs</div>
+          <div class="apr ap2"><div class="apf"><label>Rate per chair (₹)</label><input type="number" id="c-dc"/></div><div class="apf"><label>Minimum charge (₹)</label><input type="number" id="c-dm"/></div></div>
+        </div>
+
+        <div class="aps"><div class="apst">Car interior cleaning</div>
+          <div class="apr ap3"><div class="apf"><label>Hatchback (₹)</label><input type="number" id="c-ch"/></div><div class="apf"><label>Sedan / MUV (₹)</label><input type="number" id="c-cs"/></div><div class="apf"><label>SUV / XUV (₹)</label><input type="number" id="c-csuv"/></div></div>
+          <div class="apr ap4"><div class="apf"><label>Seat shampoo</label><input type="number" id="c-cseat"/></div><div class="apf"><label>Floor carpet</label><input type="number" id="c-ccarp"/></div><div class="apf"><label>AC vent</label><input type="number" id="c-cac"/></div><div class="apf"><label>Boot / dicky</label><input type="number" id="c-cboot"/></div></div>
+        </div>
+
+        <div class="aps"><div class="apst">Water tank cleaning</div>
+          <div class="apr ap3"><div class="apf"><label>Overhead (₹/L)</label><input type="number" id="c-tov" step="0.1"/></div><div class="apf"><label>Underground (₹/L)</label><input type="number" id="c-tug" step="0.1"/></div><div class="apf"><label>Cement (₹/L)</label><input type="number" id="c-tce" step="0.1"/></div></div>
+          <div class="apr ap3"><div class="apf"><label>Volume disc. from (L)</label><input type="number" id="c-tdf"/></div><div class="apf"><label>Discount %</label><input type="number" id="c-tdp"/></div><div class="apf"><label>Minimum charge (₹)</label><input type="number" id="c-tmin"/></div></div>
+        </div>
+
+        <div class="aps"><div class="apst">Pressure washing — slab rates (₹/sqft)</div>
+          <div style="font-size:11px;color:var(--ct2);margin-bottom:6px;">Rate steps down every 500 sqft. Set rate for each slab.</div>
+          <div style="font-size:11px;font-weight:600;color:var(--ct2);margin:6px 0 5px;">Interlock / paver</div>
+          <div class="apr ap4"><div class="apf"><label>0–500 sqft</label><input type="number" id="c-pwi0" step="0.5"/></div><div class="apf"><label>501–1,000 sqft</label><input type="number" id="c-pwi1" step="0.5"/></div><div class="apf"><label>1,001–1,500 sqft</label><input type="number" id="c-pwi2" step="0.5"/></div><div class="apf"><label>1,500+ sqft</label><input type="number" id="c-pwi3" step="0.5"/></div></div>
+          <div style="font-size:11px;font-weight:600;color:var(--ct2);margin:6px 0 5px;">Terrace / roof</div>
+          <div class="apr ap4"><div class="apf"><label>0–500 sqft</label><input type="number" id="c-pwt0" step="0.5"/></div><div class="apf"><label>501–1,000 sqft</label><input type="number" id="c-pwt1" step="0.5"/></div><div class="apf"><label>1,001–1,500 sqft</label><input type="number" id="c-pwt2" step="0.5"/></div><div class="apf"><label>1,500+ sqft</label><input type="number" id="c-pwt3" step="0.5"/></div></div>
+          <div style="font-size:11px;font-weight:600;color:var(--ct2);margin:6px 0 5px;">Compound wall</div>
+          <div class="apr ap4"><div class="apf"><label>0–500 sqft</label><input type="number" id="c-pww0" step="0.5"/></div><div class="apf"><label>501–1,000 sqft</label><input type="number" id="c-pww1" step="0.5"/></div><div class="apf"><label>1,001–1,500 sqft</label><input type="number" id="c-pww2" step="0.5"/></div><div class="apf"><label>1,500+ sqft</label><input type="number" id="c-pww3" step="0.5"/></div></div>
+          <div class="apr ap2"><div class="apf"><label>Minimum charge (₹)</label><input type="number" id="c-pwm"/></div></div>
+        </div>
+
+        <div class="aps"><div class="apst">Travel / distance surcharge (₹) — base: Kottayam 686001</div>
+          <div class="apr ap3"><div class="apf"><label>31–50 km</label><input type="number" id="c-d1"/></div><div class="apf"><label>51–80 km</label><input type="number" id="c-d2"/></div><div class="apf"><label>81–120 km</label><input type="number" id="c-d3"/></div></div>
+          <div class="apr ap2"><div class="apf"><label>121–180 km</label><input type="number" id="c-d4"/></div><div class="apf"><label>&gt;180 km (0 = contact msg)</label><input type="number" id="c-d5"/></div></div>
+        </div>
+
+        <div class="aps"><div class="apst">Security</div>
+          <div class="apr ap2"><div class="apf"><label>Change password</label><input type="password" id="c-pw" placeholder="Leave blank to keep current"/></div></div>
+        </div>
+
+      </div>
+      <div class="apft">
+        <button class="brs" onclick="resetDef()">Reset to defaults</button>
+        <div style="display:flex;align-items:center;gap:12px;"><span class="svm" id="svm">Saved!</span><button class="bsv" onclick="saveCfg()">Save changes</button></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ═══════════════════════════════════════
+// CONFIG DEFAULTS
+// ═══════════════════════════════════════
+const DEF = {
+  pw: 'cleanwarks2025',
+  reg:4, deep:{u:5,s:5.5,f:6}, post:6.5, movein:{u:5,s:5.5,f:6},
+  minChg:6000, minSqft:1000,
+  tierB:2500, tierBD:0.5, tierC:4000, tierCD:1,
+  roomSqft:160, roomChg:450,
+  winStd:100, winLarge:150,
+  balcony:350, fan:80, fixture:50, acUnit:400,
+  bthStd:750, bthAtt:850,
+  kitchen:1200, carpet:600, terrace:700,
+  matS:800, matD:1000, matQ:1200,
+  sofaFab:400, sofaLea:500, sofaMin:1200,
+  dChair:100, dMin:500,
+  carH:1800, carS:2200, carSUV:2800,
+  carSeat:600, carCarp:400, carAC:300, carBoot:250,
+  tankOv:1.5, tankUg:2, tankCe:2.5, tankDF:3000, tankDP:15, tankMin:500,
+  pwISlab:[7, 5.5, 4.5, 4],
+  pwTSlab:[8, 6.5, 5.5, 5],
+  pwWSlab:[9, 7.5, 6.5, 6],
+  pwMin:2000,
+  dist:[0,200,400,700,1000,0]
+};
+
+let cfg = loadC();
+function loadC(){try{const s=localStorage.getItem('cw6');if(s)return JSON.parse(s);}catch(e){}return JSON.parse(JSON.stringify(DEF));}
+function saveC(){localStorage.setItem('cw6',JSON.stringify(cfg));}
+
+// ═══════════════════════════════════════
+// PINCODE / DISTANCE
+// ═══════════════════════════════════════
+const PZ={686:0,685:1,6890:1,6891:1,6892:1,6893:1,6894:1,6895:1,6896:1,6897:1,6898:1,6899:1,688:2,6870:2,6871:2,6872:2,6873:2,6874:2,6875:2,6876:2,6877:2,6878:2,6879:2,682:2,683:2,6840:2,6841:2,6842:2,6843:2,6844:2,6845:2,691:5,6900:5,6901:5,6902:5,6903:5,6904:5,6905:5,6906:5,6907:5,6908:5,6909:5,695:5,6960:5,6961:5,6962:5,6963:5,680:5,6800:5,6801:5,6802:5,6803:5,6804:5,6805:5,678:5,676:5,6790:5,6791:5,6792:5,6793:5,6794:5,6795:5,673:5,6720:5,6730:5,6731:5,6732:5,6733:5,6734:5,6735:5,6736:5,670:5,671:5,6710:5,6711:5,6712:5};
+const ZL=['Free zone (within 30 km)','31–50 km','51–70 km','Outside service area','Outside service area','Outside service area'];
+const ZC=['cfree','cpaid','cpaid','cpaid','cpaid','cout'];
+let distChg=0;
+function getPZ(pin){if(!pin||pin.length!==6)return -1;const p=parseInt(pin);if(isNaN(p))return -1;const p4=Math.floor(p/100),p3=Math.floor(p/1000);return PZ[p4]!==undefined?PZ[p4]:PZ[p3]!==undefined?PZ[p3]:-1;}
+function calcDist(){
+  const pin=document.getElementById('pincode').value.trim(),z=getPZ(pin);
+  const pr=document.getElementById('pin-result');
+  if(pin.length<6){pr.innerHTML='<span class="chip cunk">Enter pincode for travel charge</span>';distChg=0;}
+  else if(z===-1){pr.innerHTML='<span class="chip cunk">Pincode not found</span>';distChg=0;}
+  else if(z===5){pr.innerHTML='<span class="chip cout">Outside service area — call for quote</span>';distChg=0;}
+  else{distChg=z===0?0:cfg.dist[z];const ex=distChg>0?` · +₹${distChg.toLocaleString('en-IN')} travel`:'';pr.innerHTML=`<span class="chip ${ZC[z]}">${ZL[z]}${ex}</span>`;}
+  recalcAll();
+}
+
+// ═══════════════════════════════════════
+// HOUSE — ADD-ON STATE
+// ═══════════════════════════════════════
+const A = {
+  winStd:  {on:false,count:1},
+  winLarge:{on:false,count:1},
+  balcony: {on:false,count:1},
+  fan:     {on:false,count:1},
+  fixture: {on:false,count:1},
+  acUnit:  {on:false,count:1},
+  bth: {stdOn:false,stdCnt:1,attOn:false,attCnt:1},
+  kitchen: {on:false},
+  carpet:  {on:false},
+  terrace: {on:false},
+  mat: {sOn:false,sCnt:1,dOn:false,dCnt:1,qOn:false,qCnt:1}
+};
+
+let hType=0, hFurnish=0, hRooms=4;
+const DEEP_INCL = ['winStd','winLarge','balcony','fan','fixture','kitchen'];
+
+function ucHtml(key,val){
+  return `<div class="uc" onclick="event.stopPropagation()">
+    <button class="uc-b" onclick="adjA('${key}',-1)">−</button>
+    <div class="uc-v" id="ucv-${key}">${val}</div>
+    <button class="uc-b" onclick="adjA('${key}',1)">+</button>
+  </div>`;
+}
+function ucHtml2(key,val){
+  return `<div class="uc" onclick="event.stopPropagation()">
+    <button class="uc-b" onclick="adjA2('${key}',-1)">−</button>
+    <div class="uc-v" id="ucv-${key}">${val}</div>
+    <button class="uc-b" onclick="adjA2('${key}',1)">+</button>
+  </div>`;
+}
+
+function adjA(key,d){A[key].count=Math.max(1,Math.min(50,A[key].count+d));buildAddons();calcHouse();}
+function adjA2(key,d){
+  const m=key.match(/^(bth|mat)(std|att|s|d|q)Cnt$/);
+  if(!m)return;
+  const obj=A[m[1]],prop=m[2]+'Cnt';
+  obj[prop]=Math.max(1,Math.min(50,obj[prop]+d));
+  buildAddons();calcHouse();
+}
+
+function togA(key){
+  if(A[key]!==undefined){A[key].on=!A[key].on;buildAddons();calcHouse();}
+}
+function togBth(type){
+  A.bth[type+'On']=!A.bth[type+'On'];
+  buildAddons();calcHouse();
+}
+function togMat(size){
+  A.mat[size+'On']=!A.mat[size+'On'];
+  buildAddons();calcHouse();
+}
+
+function buildAddons(){
+  const isDeep=hType===1||hType===2||hType===3;
+  const inclLabel={1:'deep clean',2:'post-construction',3:'move-in / out'}[hType]||'';
+  document.getElementById('h-incl').classList.toggle('show',isDeep);
+  if(isDeep) document.getElementById('h-incl').textContent=`✓ ${inclLabel.charAt(0).toUpperCase()+inclLabel.slice(1)} includes: kitchen, all windows, ceiling fans, light fixtures, AC filter cleaning, balcony — at no extra charge.`;
+  const wrap=document.getElementById('h-addons');
+  wrap.innerHTML='';
+
+  function addCountRow(key,name,sub,priceVal){
+    const incl=isDeep&&DEEP_INCL.includes(key);
+    const st=A[key];
+    const div=document.createElement('div');
+    div.className='ar'+(incl?' incl':(st.on?' on clickable':' clickable'));
+    const right=incl
+      ?'<span class="a-ibdg">Included</span>'
+      :st.on
+        ?`${ucHtml(key,st.count)}<span class="a-upr">× ₹${priceVal.toLocaleString('en-IN')}</span>`
+        :`<span class="a-flat">+₹${priceVal.toLocaleString('en-IN')} each</span>`;
+    div.innerHTML=`<div class="a-tog"></div><div class="a-text"><div class="a-name">${name}</div><div class="a-sub">${incl?'Included in deep clean':sub}</div></div><div class="a-right">${right}</div>`;
+    if(!incl) div.addEventListener('click',()=>{togA(key);});
+    wrap.appendChild(div);
+  }
+
+  function addFlatRow(key,name,sub,priceVal){
+    const incl=isDeep&&DEEP_INCL.includes(key);
+    const st=A[key];
+    const div=document.createElement('div');
+    div.className='ar'+(incl?' incl':(st.on?' on clickable':' clickable'));
+    const right=incl
+      ?'<span class="a-ibdg">Included</span>'
+      :`<span class="a-flat">${st.on?'':'+'}₹${priceVal.toLocaleString('en-IN')}</span>`;
+    div.innerHTML=`<div class="a-tog"></div><div class="a-text"><div class="a-name">${name}</div><div class="a-sub">${incl?'Included in deep clean':sub}</div></div><div class="a-right">${right}</div>`;
+    if(!incl) div.addEventListener('click',()=>{togA(key);});
+    wrap.appendChild(div);
+  }
+
+  addCountRow('winStd',   'Window cleaning — standard', 'Small / standard windows · per window', cfg.winStd);
+  addCountRow('winLarge', 'Window cleaning — large / sliding', 'French / bay / full-height windows · per window', cfg.winLarge);
+  addCountRow('balcony',  'Balcony cleaning', 'Sweep, mop, grill wipe · per balcony', cfg.balcony);
+  addCountRow('fan',      'Ceiling fan cleaning', 'Blades, body & housing · per fan', cfg.fan);
+  addCountRow('fixture',  'Light fixtures', 'Per bulb holder / pendant / chandelier', cfg.fixture);
+  addCountRow('acUnit',   'Extra AC unit (full service)', 'Coil, fins, tray deep clean — beyond filter · per unit', cfg.acUnit);
+
+  // bathroom sub-rows
+  const bthDiv=document.createElement('div');
+  const bthAnyOn=A.bth.stdOn||A.bth.attOn;
+  bthDiv.className='ar clickable'+(bthAnyOn?' on':'');
+  bthDiv.innerHTML=`<div class="a-tog" style="align-self:flex-start;margin-top:2px;"></div>
+    <div class="a-text"><div class="a-name">Extra bathroom cleaning</div>
+      <div class="a-sub">Standard ₹${cfg.bthStd} · Attached/large ₹${cfg.bthAtt}</div>
+    </div>
+    <div class="a-right"><span class="a-flat">${bthAnyOn?'':'+₹'+cfg.bthStd+' / '+cfg.bthAtt}</span></div>`;
+  wrap.appendChild(bthDiv);
+  const bthSub=document.createElement('div');
+  bthSub.className='bth-rows';
+  bthSub.innerHTML=`
+    <div class="bth-row">
+      <div style="display:flex;align-items:center;gap:8px;cursor:pointer;" onclick="togBth('std')">
+        <div style="width:16px;height:16px;border-radius:50%;border:1.5px solid ${A.bth.stdOn?'var(--cg)':'var(--cbdr2)'};background:${A.bth.stdOn?'var(--cg)':'var(--csur)'};flex-shrink:0;display:flex;align-items:center;justify-content:center;">
+          ${A.bth.stdOn?'<span style="content:\'\';width:8px;height:5px;border-left:2px solid white;border-bottom:2px solid white;display:block;transform:rotate(-45deg) translateY(-1px);"></span>':''}
+        </div>
+        <span class="bth-lbl">Standard bathroom</span>
+      </div>
+      <span class="bth-price">₹${cfg.bthStd} each</span>
+      <div class="uc" onclick="event.stopPropagation()">
+        <button class="uc-b" onclick="adjA2('bthstdCnt',-1)">−</button>
+        <div class="uc-v" id="ucv-bthstdCnt">${A.bth.stdCnt}</div>
+        <button class="uc-b" onclick="adjA2('bthstdCnt',1)">+</button>
+      </div>
+    </div>
+    <div class="bth-row">
+      <div style="display:flex;align-items:center;gap:8px;cursor:pointer;" onclick="togBth('att')">
+        <div style="width:16px;height:16px;border-radius:50%;border:1.5px solid ${A.bth.attOn?'var(--cg)':'var(--cbdr2)'};background:${A.bth.attOn?'var(--cg)':'var(--csur)'};flex-shrink:0;display:flex;align-items:center;justify-content:center;">
+          ${A.bth.attOn?'<span style="width:8px;height:5px;border-left:2px solid white;border-bottom:2px solid white;display:block;transform:rotate(-45deg) translateY(-1px);"></span>':''}
+        </div>
+        <span class="bth-lbl">Attached / large bathroom</span>
+      </div>
+      <span class="bth-price">₹${cfg.bthAtt} each</span>
+      <div class="uc" onclick="event.stopPropagation()">
+        <button class="uc-b" onclick="adjA2('bthattCnt',-1)">−</button>
+        <div class="uc-v" id="ucv-bthattCnt">${A.bth.attCnt}</div>
+        <button class="uc-b" onclick="adjA2('bthattCnt',1)">+</button>
+      </div>
+    </div>`;
+  wrap.appendChild(bthSub);
+
+  addFlatRow('kitchen','Kitchen deep clean','All surfaces, appliances & sink — full deep scrub',cfg.kitchen);
+  addFlatRow('carpet', 'Carpet shampoo wash','Shampoo + extraction (vacuum already done in deep clean)',cfg.carpet);
+  addFlatRow('terrace','Terrace cleaning','Sweeping + mopping only (pressure wash is separate)',cfg.terrace);
+
+  // mattress sub-rows
+  const matDiv=document.createElement('div');
+  const matAnyOn=A.mat.sOn||A.mat.dOn||A.mat.qOn;
+  matDiv.className='ar clickable'+(matAnyOn?' on':'');
+  matDiv.innerHTML=`<div class="a-tog" style="align-self:flex-start;margin-top:2px;"></div>
+    <div class="a-text"><div class="a-name">Mattress shampoo wash</div>
+      <div class="a-sub">Single ₹${cfg.matS} · Double ₹${cfg.matD} · Queen/King ₹${cfg.matQ}</div>
+    </div>
+    <div class="a-right"><span class="a-flat">${matAnyOn?'':'from +₹'+cfg.matS}</span></div>`;
+  wrap.appendChild(matDiv);
+  const matSub=document.createElement('div');
+  matSub.className='mat-rows';
+
+  function matRowHtml(sizeKey,label,price,cntKey,isOn,cnt){
+    return `<div class="mat-row">
+      <div style="display:flex;align-items:center;gap:8px;cursor:pointer;" onclick="togMat('${sizeKey}')">
+        <div style="width:16px;height:16px;border-radius:50%;border:1.5px solid ${isOn?'var(--cg)':'var(--cbdr2)'};background:${isOn?'var(--cg)':'var(--csur)'};flex-shrink:0;display:flex;align-items:center;justify-content:center;">
+          ${isOn?'<span style="width:8px;height:5px;border-left:2px solid white;border-bottom:2px solid white;display:block;transform:rotate(-45deg) translateY(-1px);"></span>':''}
+        </div>
+        <span class="mat-lbl">${label}</span>
+      </div>
+      <span class="mat-price">₹${price.toLocaleString('en-IN')} each</span>
+      <div class="uc" onclick="event.stopPropagation()">
+        <button class="uc-b" onclick="adjA2('mat${cntKey}',-1)">−</button>
+        <div class="uc-v" id="ucv-mat${cntKey}">${cnt}</div>
+        <button class="uc-b" onclick="adjA2('mat${cntKey}',1)">+</button>
+      </div>
+    </div>`;
+  }
+  matSub.innerHTML=
+    matRowHtml('s','Single size',cfg.matS,'sCnt',A.mat.sOn,A.mat.sCnt)+
+    matRowHtml('d','Double size',cfg.matD,'dCnt',A.mat.dOn,A.mat.dCnt)+
+    matRowHtml('q','Queen / King size',cfg.matQ,'qCnt',A.mat.qOn,A.mat.qCnt);
+  wrap.appendChild(matSub);
+}
+
+// ═══════════════════════════════════════
+// HOUSE CALC
+// ═══════════════════════════════════════
+function getHR(){
+  const fk=['u','s','f'][hType===2?0:hFurnish];
+  return({0:{u:cfg.reg,s:cfg.reg,f:cfg.reg},1:{u:cfg.deep.u,s:cfg.deep.s,f:cfg.deep.f},2:{u:cfg.post,s:cfg.post,f:cfg.post},3:{u:cfg.movein.u,s:cfg.movein.s,f:cfg.movein.f}})[hType][fk];
+}
+function setHT(v,btn){hType=v;togSeg('ht-seg',btn);document.getElementById('h-fc').style.display=v===2?'none':'';buildAddons();calcHouse();}
+function setHF(v,btn){hFurnish=v;togSeg('hf-seg',btn);calcHouse();}
+function spinRoom(d){hRooms=Math.max(1,Math.min(20,hRooms+d));document.getElementById('h-rm').textContent=hRooms;calcHouse();}
+
+function calcHouse(){
+  const rate=getHR();
+  document.getElementById('h-rl').textContent=`₹${rate} / sqft`;
+  const sq=Math.max(0,parseFloat(document.getElementById('h-sqft').value)||0);
+  const td=sq<=cfg.tierB?0:sq<=cfg.tierC?cfg.tierBD:cfg.tierCD, er=rate-td;
+  let base=sq*er; const isM=sq<cfg.minSqft&&base<cfg.minChg; if(isM)base=cfg.minChg;
+  const expR=Math.round(sq/cfg.roomSqft), exR=Math.max(0,hRooms-expR), rSc=exR*cfg.roomChg;
+  const isDeep=hType===1||hType===2||hType===3;
+  let adT=0; const adRows=[];
+
+  const pcItems=[
+    ['winStd','Standard windows',cfg.winStd],
+    ['winLarge','Large/sliding windows',cfg.winLarge],
+    ['balcony','Balcony',cfg.balcony],
+    ['fan','Ceiling fans',cfg.fan],
+    ['fixture','Light fixtures',cfg.fixture],
+    ['acUnit','Extra AC unit (full service)',cfg.acUnit],
+  ];
+  pcItems.forEach(([k,n,p])=>{
+    if(!(isDeep&&DEEP_INCL.includes(k))&&A[k].on){const v=A[k].count*p;adT+=v;adRows.push([`${n} × ${A[k].count}`,fmt(v)]);}
+  });
+
+  if(A.bth.stdOn){const v=A.bth.stdCnt*cfg.bthStd;adT+=v;adRows.push([`Bathroom (standard) × ${A.bth.stdCnt}`,fmt(v)]);}
+  if(A.bth.attOn){const v=A.bth.attCnt*cfg.bthAtt;adT+=v;adRows.push([`Bathroom (attached) × ${A.bth.attCnt}`,fmt(v)]);}
+
+  const flatItems=[
+    ['kitchen','Kitchen deep clean',cfg.kitchen],
+    ['carpet','Carpet shampoo wash',cfg.carpet],
+    ['terrace','Terrace cleaning',cfg.terrace],
+  ];
+  flatItems.forEach(([k,n,p])=>{
+    if(!(isDeep&&DEEP_INCL.includes(k))&&A[k].on){adT+=p;adRows.push([n,fmt(p)]);}
+  });
+
+  const matItems=[['s','Single mattress',cfg.matS],['d','Double mattress',cfg.matD],['q','Queen/King mattress',cfg.matQ]];
+  matItems.forEach(([k,n,p])=>{
+    if(A.mat[k+'On']){const v=A.mat[k+'Cnt']*p;adT+=v;adRows.push([`${n} × ${A.mat[k+'Cnt']}`,fmt(v)]);}
+  });
+
+  const tier=sq<=cfg.tierB?'Tier A':sq<=cfg.tierC?'Tier B':'Tier C';
+  const grand=base+rSc+adT+distChg;
+  const tn=['Regular','Deep clean','Post-construction','Move-in / out'];
+  const fn=['Unfurnished','Semi-furnished','Fully furnished'];
+  const rows=[[isM?`Min. charge (${sq} sqft < ${cfg.minSqft})`:`${tn[hType]}${hType===2?'':' · '+fn[hFurnish]} · ${sq.toLocaleString()} sqft × ₹${er.toFixed(1)}`,fmt(base)]];
+  if(rSc>0)rows.push([`Room surcharge (${exR} extra × ₹${cfg.roomChg})`,fmt(rSc)]);
+  adRows.forEach(r=>rows.push(r));
+  if(distChg>0)rows.push(['Travel surcharge',fmt(distChg)]);
+  const bg=[`<span class="rb rb-t">${tier}</span>`];
+  if(isM)bg.push('<span class="rb rb-m">Min. charge</span>');
+  if(distChg>0)bg.push(`<span class="rb rb-d">+₹${distChg.toLocaleString('en-IN')} travel</span>`);
+  render('h-res',rows,grand,bg,'');
+}
+
+// ═══════════════════════════════════════
+// SOFA
+// ═══════════════════════════════════════
+let sItem=0, sSeats=3, sMat='fabric', dChairs=6, carT='hatch', carSel={};
+function setSI(v,btn){sItem=v;togSeg('si-seg',btn);['sofa','dining','car'].forEach(s=>document.getElementById('sp-'+s).style.display='none');document.getElementById('sp-'+['sofa','dining','car'][v]).style.display='';calcSofa();}
+function setSS(v,btn){sSeats=v;document.querySelectorAll('#ss-grid .pbtn').forEach(b=>b.classList.remove('on'));btn.classList.add('on');document.getElementById('ss-cw').style.display=v===0?'block':'none';calcSofa();}
+function setSM(v,btn){sMat=v;document.querySelectorAll('[id^="sm-"]').forEach(c=>c.classList.remove('on'));btn.classList.add('on');calcSofa();}
+function setDC(v,btn){dChairs=v;document.querySelectorAll('#dc-grid .pbtn').forEach(b=>b.classList.remove('on'));btn.classList.add('on');document.getElementById('dc-cw').style.display=v===0?'block':'none';calcSofa();}
+function setCV(v,btn){carT=v;document.querySelectorAll('[id^="cv-"]').forEach(c=>c.classList.remove('on'));btn.classList.add('on');calcSofa();}
+function togCA(el,k){carSel[k]=!carSel[k];el.classList.toggle('on',!!carSel[k]);calcSofa();}
+function calcSofa(){
+  document.getElementById('sfab-p').textContent=`₹${cfg.sofaFab}/seat`;
+  document.getElementById('slea-p').textContent=`₹${cfg.sofaLea}/seat`;
+  document.getElementById('cv-hp').textContent=`₹${cfg.carH.toLocaleString('en-IN')}`;
+  document.getElementById('cv-sp').textContent=`₹${cfg.carS.toLocaleString('en-IN')}`;
+  document.getElementById('cv-suvp').textContent=`₹${cfg.carSUV.toLocaleString('en-IN')}`;
+  [{id:'cap-seat',k:'carSeat'},{id:'cap-carp',k:'carCarp'},{id:'cap-ac',k:'carAC'},{id:'cap-boot',k:'carBoot'}].forEach(x=>{const e=document.getElementById(x.id);if(e)e.textContent='+₹'+cfg[x.k];});
+  let rows=[],grand=0,bg=[],note='';
+  if(sItem===0){
+    const seats=sSeats===0?(parseFloat(document.getElementById('ss-cv').value)||0):sSeats;
+    const rate=sMat==='fabric'?cfg.sofaFab:cfg.sofaLea;
+    let sub=seats*rate;const isM=sub<cfg.sofaMin;if(isM)sub=cfg.sofaMin;
+    grand=sub+distChg;
+    rows.push([isM?`Min. charge (${seats} seat${seats!==1?'s':''})`:`${seats} seat${seats!==1?'s':''} × ₹${rate} (${sMat})`,fmt(sub)]);
+    if(distChg>0)rows.push(['Travel surcharge',fmt(distChg)]);
+    if(isM)bg.push('<span class="rb rb-m">Min. charge</span>');
+    if(distChg>0)bg.push(`<span class="rb rb-d">+₹${distChg.toLocaleString('en-IN')} travel</span>`);
+    note='Dry vacuum → wet shampoo → stain treatment → moisture extraction. Allow 3–4 hrs drying.';
+  } else if(sItem===1){
+    const chairs=dChairs===0?(parseFloat(document.getElementById('dc-cv').value)||0):dChairs;
+    let sub=chairs*cfg.dChair;const isM=sub<cfg.dMin;if(isM)sub=cfg.dMin;
+    grand=sub+distChg;
+    rows.push([isM?`Min. charge (${chairs} chair${chairs!==1?'s':''})`:`${chairs} chair${chairs!==1?'s':''} × ₹${cfg.dChair}`,fmt(sub)]);
+    if(distChg>0)rows.push(['Travel surcharge',fmt(distChg)]);
+    if(isM)bg.push('<span class="rb rb-m">Min. charge</span>');
+    if(distChg>0)bg.push(`<span class="rb rb-d">+₹${distChg.toLocaleString('en-IN')} travel</span>`);
+  } else {
+    const cr={hatch:cfg.carH,sedan:cfg.carS,suv:cfg.carSUV},cn={hatch:'Hatchback',sedan:'Sedan / MUV',suv:'SUV / XUV'};
+    let sub=cr[carT];rows.push([`${cn[carT]} interior`,fmt(sub)]);
+    const am={seat:cfg.carSeat,carp:cfg.carCarp,ac:cfg.carAC,boot:cfg.carBoot},an={seat:'Seat shampoo',carp:'Carpet shampoo',ac:'AC vent',boot:'Boot / dicky'};
+    Object.keys(carSel).forEach(k=>{if(carSel[k]){sub+=am[k]||0;rows.push([an[k],fmt(am[k]||0)]);}});
+    if(distChg>0){sub+=distChg;rows.push(['Travel surcharge',fmt(distChg)]);}
+    grand=sub;
+    if(distChg>0)bg.push(`<span class="rb rb-d">+₹${distChg.toLocaleString('en-IN')} travel</span>`);
+    note='Base includes interior vacuum, dashboard, door panels, glass cleaning.';
+  }
+  render('s-res',rows,grand,bg,note);
+}
+
+// ═══════════════════════════════════════
+// TANK
+// ═══════════════════════════════════════
+let tkL=1000, tkT=0;
+function setTK(v,btn){tkL=v;document.querySelectorAll('#tk-grid .pbtn').forEach(b=>b.classList.remove('on'));btn.classList.add('on');document.getElementById('tk-cw').style.display=v===0?'block':'none';calcTank();}
+function setTT(v,btn){tkT=v;togSeg('tt-seg',btn);calcTank();}
+function calcTank(){
+  const litres=tkL===0?(parseFloat(document.getElementById('tk-cv').value)||0):tkL;
+  const rates=[cfg.tankOv,cfg.tankUg,cfg.tankCe],tn=['Overhead (plastic)','Underground / sump','Cement / tile'];
+  let rate=rates[tkT],dn='';
+  if(litres>=cfg.tankDF){rate*=(1-cfg.tankDP/100);dn=`${cfg.tankDP}% volume discount`;}
+  document.getElementById('tk-rl').textContent=`₹${rates[tkT].toFixed(2)} / litre`;
+  let sub=litres*rate;const isM=sub<cfg.tankMin;if(isM)sub=cfg.tankMin;
+  const grand=sub+distChg;
+  const rows=[[isM?`Min. charge (${litres.toLocaleString()} L)`:`${litres.toLocaleString()} L × ₹${rate.toFixed(2)} · ${tn[tkT]}`,fmt(sub)]];
+  if(distChg>0)rows.push(['Travel surcharge',fmt(distChg)]);
+  const bg=[];if(isM)bg.push('<span class="rb rb-m">Min. charge</span>');if(dn)bg.push(`<span class="rb rb-t">${dn} applied</span>`);if(distChg>0)bg.push(`<span class="rb rb-d">+₹${distChg.toLocaleString('en-IN')} travel</span>`);
+  render('tk-res',rows,grand,bg,'Drain → scrub → disinfect → rinse. Sludge removal included.');
+}
+
+// ═══════════════════════════════════════
+// PRESSURE WASH
+// ═══════════════════════════════════════
+let pwT=0;
+function setPWT(v,btn){pwT=v;togSeg('pw-seg',btn);calcPW();}
+
+function calcPWSlab(sq){
+  const slabMap=[cfg.pwISlab,cfg.pwTSlab,cfg.pwWSlab];
+  const slabs=slabMap[pwT]||cfg.pwISlab;
+  const breaks=[0,500,1000,1500,Infinity];
+  let total=0; const rows=[];
+  for(let i=0;i<4;i++){
+    const lo=breaks[i],hi=breaks[i+1];
+    if(sq<=lo) break;
+    const chunk=Math.min(sq,hi)-lo;
+    const cost=chunk*slabs[i];
+    total+=cost;
+    rows.push({chunk,rate:slabs[i],cost,lo:lo+1,hi:Math.min(sq,hi)});
+  }
+  return {total,rows};
+}
+
+function calcPW(){
+  const sq=Math.max(0,parseFloat(document.getElementById('pw-sqft').value)||0);
+  const slabMap=[cfg.pwISlab,cfg.pwTSlab,cfg.pwWSlab];
+  const slabs=slabMap[pwT]||cfg.pwISlab;
+  document.getElementById('pw-rl').textContent=`₹${slabs[0]}–₹${slabs[slabs.length-1]} / sqft`;
+  document.getElementById('pw-ibox').textContent=
+    `Interlock: ₹${cfg.pwISlab[0]} → ₹${cfg.pwISlab[3]}/sqft · Terrace: ₹${cfg.pwTSlab[0]} → ₹${cfg.pwTSlab[3]}/sqft · Compound wall: ₹${cfg.pwWSlab[0]} → ₹${cfg.pwWSlab[3]}/sqft · Rate reduces every 500 sqft · Min. ₹${cfg.pwMin.toLocaleString('en-IN')}`;
+  const {total:slabTotal, rows:slabRows}=calcPWSlab(sq);
+  let sub=slabTotal; const isM=sub<cfg.pwMin; if(isM)sub=cfg.pwMin;
+  const grand=sub+distChg;
+  const resultRows=[];
+  if(isM){
+    resultRows.push([`Min. charge (${sq.toLocaleString()} sqft)`,fmt(sub)]);
+  } else {
+    slabRows.forEach(s=>{
+      resultRows.push([`${s.lo}–${s.hi} sqft × ₹${s.rate}`,fmt(s.cost)]);
+    });
+  }
+  if(distChg>0)resultRows.push(['Travel surcharge',fmt(distChg)]);
+  const bg=[];
+  if(isM)bg.push('<span class="rb rb-m">Min. charge</span>');
+  if(!isM&&slabRows.length>1)bg.push('<span class="rb rb-t">Slab pricing applied</span>');
+  if(distChg>0)bg.push(`<span class="rb rb-d">+₹${distChg.toLocaleString('en-IN')} travel</span>`);
+  render('pw-res',resultRows,grand,bg,'High-pressure jet wash. Rate reduces as area increases. Chemical treatment on request.');
+}
+
+// ═══════════════════════════════════════
+// UTILS
+// ═══════════════════════════════════════
+function fmt(n){return '₹'+Math.round(n).toLocaleString('en-IN');}
+function togSeg(sid,btn){document.querySelectorAll('#'+sid+' button').forEach(b=>b.classList.remove('on'));btn.classList.add('on');}
+function showTab(id,btn){document.querySelectorAll('.svc').forEach(s=>s.classList.remove('on'));document.querySelectorAll('.tab').forEach(b=>b.classList.remove('on'));document.getElementById('svc-'+id).classList.add('on');btn.classList.add('on');}
+function render(id,rows,grand,badges,note){
+  document.getElementById(id).innerHTML=`<div class="rrows">${rows.map(r=>`<div class="rrow"><span>${r[0]}</span><span class="rv">${r[1]}</span></div>`).join('')}</div><hr class="rhr"/><div class="rtot"><span class="rtlbl">Total estimate</span><span class="rtamt">${fmt(grand)}</span></div>${badges.length?`<div class="rbgs">${badges.join('')}</div>`:''}${note?`<div class="rnote">${note}</div>`:''}`;
+}
+function recalcAll(){buildAddons();calcHouse();calcSofa();calcTank();calcPW();}
+
+// ═══════════════════════════════════════
+// ADMIN
+// ═══════════════════════════════════════
+function openAdmin(){document.getElementById('ov').classList.add('open');}
+function closeAdmin(){document.getElementById('ov').classList.remove('open');document.getElementById('lv').style.display='';document.getElementById('sv').style.display='none';document.getElementById('pw-in').value='';}
+function doLogin(){if(document.getElementById('pw-in').value===cfg.pw){document.getElementById('lv').style.display='none';document.getElementById('sv').style.display='';fillA();}else document.getElementById('lerr').style.display='block';}
+function fillA(){
+  const s=(i,v)=>{const e=document.getElementById(i);if(e)e.value=v;};
+  s('c-reg',cfg.reg);s('c-du',cfg.deep.u);s('c-ds',cfg.deep.s);s('c-df',cfg.deep.f);s('c-post',cfg.post);s('c-mu',cfg.movein.u);s('c-ms',cfg.movein.s);s('c-mf',cfg.movein.f);
+  s('c-mc',cfg.minChg);s('c-msq',cfg.minSqft);s('c-tb',cfg.tierB);s('c-tbd',cfg.tierBD);s('c-tc',cfg.tierC);s('c-tcd',cfg.tierCD);s('c-rsq',cfg.roomSqft);s('c-rch',cfg.roomChg);
+  s('c-ws',cfg.winStd);s('c-wl',cfg.winLarge);s('c-bal',cfg.balcony);s('c-fan',cfg.fan);s('c-fix',cfg.fixture);s('c-acu',cfg.acUnit);
+  s('c-bths',cfg.bthStd);s('c-btha',cfg.bthAtt);
+  s('c-kit',cfg.kitchen);s('c-carp',cfg.carpet);s('c-ter',cfg.terrace);
+  s('c-mats',cfg.matS);s('c-matd',cfg.matD);s('c-matq',cfg.matQ);
+  s('c-sf',cfg.sofaFab);s('c-sl',cfg.sofaLea);s('c-sm',cfg.sofaMin);s('c-dc',cfg.dChair);s('c-dm',cfg.dMin);
+  s('c-ch',cfg.carH);s('c-cs',cfg.carS);s('c-csuv',cfg.carSUV);s('c-cseat',cfg.carSeat);s('c-ccarp',cfg.carCarp);s('c-cac',cfg.carAC);s('c-cboot',cfg.carBoot);
+  s('c-tov',cfg.tankOv);s('c-tug',cfg.tankUg);s('c-tce',cfg.tankCe);s('c-tdf',cfg.tankDF);s('c-tdp',cfg.tankDP);s('c-tmin',cfg.tankMin);
+  s('c-pwi0',(cfg.pwISlab||[7])[0]);s('c-pwi1',(cfg.pwISlab||[,5.5])[1]);s('c-pwi2',(cfg.pwISlab||[,,4.5])[2]);s('c-pwi3',(cfg.pwISlab||[,,,4])[3]);
+  s('c-pwt0',(cfg.pwTSlab||[8])[0]);s('c-pwt1',(cfg.pwTSlab||[,6.5])[1]);s('c-pwt2',(cfg.pwTSlab||[,,5.5])[2]);s('c-pwt3',(cfg.pwTSlab||[,,,5])[3]);
+  s('c-pww0',(cfg.pwWSlab||[9])[0]);s('c-pww1',(cfg.pwWSlab||[,7.5])[1]);s('c-pww2',(cfg.pwWSlab||[,,6.5])[2]);s('c-pww3',(cfg.pwWSlab||[,,,6])[3]);
+  s('c-pwm',cfg.pwMin);
+  s('c-d1',cfg.dist[1]);s('c-d2',cfg.dist[2]);s('c-d3',cfg.dist[3]);s('c-d4',cfg.dist[4]);s('c-d5',cfg.dist[5]);
+}
+function saveCfg(){
+  const g=(i,fb)=>{const e=document.getElementById(i);return e?(parseFloat(e.value)||fb):fb;};
+  const gi=(i,fb)=>{const e=document.getElementById(i);return e?(parseInt(e.value)||fb):fb;};
+  cfg.reg=g('c-reg',4);cfg.deep={u:g('c-du',5),s:g('c-ds',5.5),f:g('c-df',6)};cfg.post=g('c-post',6.5);cfg.movein={u:g('c-mu',5),s:g('c-ms',5.5),f:g('c-mf',6)};
+  cfg.minChg=gi('c-mc',6000);cfg.minSqft=gi('c-msq',1000);cfg.tierB=gi('c-tb',2500);cfg.tierBD=g('c-tbd',0.5);cfg.tierC=gi('c-tc',4000);cfg.tierCD=g('c-tcd',1);cfg.roomSqft=gi('c-rsq',160);cfg.roomChg=gi('c-rch',450);
+  cfg.winStd=gi('c-ws',100);cfg.winLarge=gi('c-wl',150);cfg.balcony=gi('c-bal',350);cfg.fan=gi('c-fan',80);cfg.fixture=gi('c-fix',50);cfg.acUnit=gi('c-acu',400);
+  cfg.bthStd=gi('c-bths',750);cfg.bthAtt=gi('c-btha',850);
+  cfg.kitchen=gi('c-kit',1200);cfg.carpet=gi('c-carp',600);cfg.terrace=gi('c-ter',700);
+  cfg.matS=gi('c-mats',800);cfg.matD=gi('c-matd',1000);cfg.matQ=gi('c-matq',1200);
+  cfg.sofaFab=gi('c-sf',400);cfg.sofaLea=gi('c-sl',500);cfg.sofaMin=gi('c-sm',1200);cfg.dChair=gi('c-dc',100);cfg.dMin=gi('c-dm',500);
+  cfg.carH=gi('c-ch',1800);cfg.carS=gi('c-cs',2200);cfg.carSUV=gi('c-csuv',2800);cfg.carSeat=gi('c-cseat',600);cfg.carCarp=gi('c-ccarp',400);cfg.carAC=gi('c-cac',300);cfg.carBoot=gi('c-cboot',250);
+  cfg.tankOv=g('c-tov',1.5);cfg.tankUg=g('c-tug',2);cfg.tankCe=g('c-tce',2.5);cfg.tankDF=gi('c-tdf',3000);cfg.tankDP=gi('c-tdp',15);cfg.tankMin=gi('c-tmin',500);
+  cfg.pwISlab=[g('c-pwi0',7),g('c-pwi1',5.5),g('c-pwi2',4.5),g('c-pwi3',4)];
+  cfg.pwTSlab=[g('c-pwt0',8),g('c-pwt1',6.5),g('c-pwt2',5.5),g('c-pwt3',5)];
+  cfg.pwWSlab=[g('c-pww0',9),g('c-pww1',7.5),g('c-pww2',6.5),g('c-pww3',6)];
+  cfg.pwMin=gi('c-pwm',2000);
+  cfg.dist=[0,gi('c-d1',200),gi('c-d2',400),gi('c-d3',700),gi('c-d4',1000),gi('c-d5',0)];
+  const np=document.getElementById('c-pw')?.value;if(np)cfg.pw=np;
+  saveC();const m=document.getElementById('svm');m.classList.add('show');setTimeout(()=>m.classList.remove('show'),2000);
+  recalcAll();
+}
+function resetDef(){if(confirm('Reset all rates to defaults?')){cfg=JSON.parse(JSON.stringify(DEF));saveC();fillA();recalcAll();}}
+
+window.addEventListener('DOMContentLoaded',()=>recalcAll());
+</script>
+
+<script>
+window.$zoho = window.$zoho || {};
+$zoho.salesiq = $zoho.salesiq || {};
+$zoho.salesiq.ready = function() {
+  $zoho.salesiq.floatwindow.visible("hide");
+};
+</script>
+<script id="zsiqscript" src="https://salesiq.zohopublic.in/widget?wc=siq7ed9d7a8db5a416388d2a5160580c3c4e37e6977028f365ffef48123eedc4ac8" defer></script>
+</body>
+</html>

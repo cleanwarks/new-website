@@ -7,9 +7,9 @@
 /* ---------- TOKENS ---------- */
 :root {
   /* Colors */
-  --orange: #106172;
-  --orange-dark: #0D5262;
-  --orange-bg: #E8F5F8;
+  --orange: #FFDC1D;
+  --orange-dark: #E8C800;
+  --orange-bg: #FEF8E1;
   --blue: #106172;
   --blue-dark: #0D5262;
   --blue-bg: #E8F5F8;
@@ -50,7 +50,7 @@
   --shadow-md: 0 8px 24px rgba(26, 31, 46, 0.08);
   --shadow-lg: 0 20px 60px rgba(26, 31, 46, 0.12);
   --shadow-xl: 0 30px 80px rgba(26, 31, 46, 0.16);
-  --shadow-orange: 0 12px 32px rgba(16, 97, 114, 0.40);
+  --shadow-orange: 0 12px 32px rgba(255, 220, 29, 0.40);
   --shadow-green: 0 12px 32px rgba(37, 211, 102, 0.30);
 
   /* Container */

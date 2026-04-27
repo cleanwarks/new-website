@@ -468,7 +468,7 @@ p {
 }
 
 .nav-logo img {
-  height: 60px;
+  height: 38px;
   width: auto;
 }
 
@@ -2519,7 +2519,7 @@ p {
   box-shadow: 0 12px 36px rgba(26, 31, 46, 0.12);
 }
 
-.nav-pill .nav-logo img { height: 60px; }
+.nav-pill .nav-logo img { height: 38px; }
 
 .nav-pill .nav-links {
   display: flex;

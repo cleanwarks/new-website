@@ -1647,7 +1647,7 @@ p {
 }
 
 .footer-contact-item a {
-  color: #111;
+  color: #106172;
   font-weight: 600;
 }
 
@@ -1668,7 +1668,7 @@ p {
   font-family: var(--font-body);
   font-size: 0.9375rem;
   font-weight: 700;
-  color: #111;
+  color: #106172;
   margin-bottom: var(--space-4);
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -2917,7 +2917,7 @@ p {
   width: 26px;
   height: 26px;
   border-radius: 50%;
-  background: #22C55E;
+  background: #767744;
   color: var(--white);
   display: flex;
   align-items: center;
@@ -3483,7 +3483,7 @@ p {
 
 .ta-orange { background: linear-gradient(135deg, var(--orange), var(--orange-dark)); }
 .ta-blue   { background: linear-gradient(135deg, var(--blue), var(--blue-dark)); }
-.ta-green  { background: linear-gradient(135deg, #22C55E, #15803D); }
+.ta-green  { background: linear-gradient(135deg, #767744, #15803D); }
 
 .testimonial-v3-name {
   font-size: 0.9375rem;
@@ -3751,8 +3751,8 @@ p {
   transition: color 0.2s;
 }
 
-.footer-cln-contact a:hover { color: #22C55E; }
-.footer-cln-contact a svg { width: 15px; height: 15px; color: #22C55E; flex-shrink: 0; }
+.footer-cln-contact a:hover { color: #767744; }
+.footer-cln-contact a svg { width: 15px; height: 15px; color: #767744; flex-shrink: 0; }
 
 /* Office address blocks inside footer */
 .footer-office {
@@ -3783,7 +3783,7 @@ p {
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 0.75rem;
   font-weight: 700;
-  color: #111;
+  color: #106172;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-bottom: 16px;
@@ -3803,7 +3803,7 @@ p {
   transition: color 0.2s;
 }
 
-.footer-cln-col ul a:hover { color: #111; }
+.footer-cln-col ul a:hover { color: #106172; }
 
 .footer-cln-bottom {
   border-top: 1px solid #eee;
@@ -3832,7 +3832,7 @@ p {
   transition: color 0.2s;
 }
 
-.footer-cln-bottom-links a:hover { color: #111; }
+.footer-cln-bottom-links a:hover { color: #106172; }
 
 /* Floating WhatsApp (Cleanora style) */
 .float-wa-cln {

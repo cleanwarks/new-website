@@ -278,7 +278,10 @@
   top: 100px;
   left: calc((100% - 1160px) / 2 + 20px);
   width: clamp(280px, 36vw, 500px);
-  background: linear-gradient(135deg, rgba(254,248,225,0.95) 0%, #FFDC1D 52%, #767744 100%);
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
   border-radius: 20px;
   padding: clamp(28px, 4vw, 44px) clamp(28px, 4vw, 44px);
   z-index: 10;
@@ -294,7 +297,7 @@
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: clamp(1.375rem, 2.5vw, 2rem);
   font-weight: 800;
-  color: #106172;
+  color: #FEF8E1;
   line-height: 1.18;
   letter-spacing: -0.025em;
   margin-bottom: 10px;
@@ -303,7 +306,7 @@
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: clamp(0.8125rem, 1.2vw, 0.9375rem);
   font-weight: 400;
-  color: #555;
+  color: rgba(255, 255, 255, 0.82);
   line-height: 1.6;
   margin-bottom: 20px;
 }
@@ -315,16 +318,16 @@
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 0.9375rem;
   font-weight: 500;
-  color: #106172;
+  color: #FFDC1D;
   text-decoration: none;
-  border-bottom: 1.5px solid rgba(0,0,0,0.4);
+  border-bottom: 1.5px solid rgba(255, 220, 29, 0.55);
   padding-bottom: 2px;
   transition: gap 0.2s;
 }
 
 .hero-card-link:hover {
   gap: 16px;
-  color: #106172;
+  color: #FFDC1D;
 }
 
 /* ---- GIANT WORDMARK ---- */
@@ -1059,7 +1062,7 @@
   flex-shrink: 0;
 }
 
-.testi-av.av-y { background: #FFDC1D; color: #106172; }
+.testi-av.av-y { background: #106172; color: #ffffff; }
 .testi-av.av-g { background: #106172; }
 .testi-av.av-b { background: #106172; }
 
@@ -1510,7 +1513,7 @@
 <section class="hero-cln">
 
   <!-- Background image -->
-  <div class="hero-cln-bg">
+  <div class="hero-cln-bg" style="display:none;">
     <img src="public/new%20hero%20image.jpg"
          alt="Professional cleaning services in Kochi Kerala and Bangalore - Clean Warks" loading="eager">
   </div>

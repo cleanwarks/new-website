@@ -1441,12 +1441,12 @@ p {
 /* ---------- BOOKING CTA BANNER ---------- */
 .cta-banner {
   position: relative;
-  background: linear-gradient(135deg, var(--orange) 0%, var(--orange-dark) 100%);
+  background: linear-gradient(135deg, #106172 0%, #0D5262 100%);
   border-radius: var(--radius-xl);
   padding: clamp(48px, 8vw, 96px) clamp(24px, 5vw, 64px);
   text-align: center;
   overflow: hidden;
-  color: var(--dark);
+  color: #ffffff;
 }
 
 .cta-banner::before {
@@ -1477,12 +1477,12 @@ p {
 }
 
 .cta-banner h2 {
-  color: var(--dark);
+  color: #ffffff;
   margin-bottom: var(--space-4);
 }
 
 .cta-banner p {
-  color: var(--mid);
+  color: rgba(255, 255, 255, 0.80);
   font-size: 1.125rem;
   margin-bottom: var(--space-6);
 }

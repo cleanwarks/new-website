@@ -270,6 +270,29 @@ img { max-width: 100%; display: block; }
 .lp-review-author { font-size: 0.875rem; font-weight: 700; color: #106172; }
 .lp-review-location { font-size: 0.8125rem; color: #9CA3AF; }
 
+/* ── BEFORE/AFTER ── */
+.lp-ba-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 32px; }
+.lp-ba-item { position: relative; border-radius: 14px; overflow: hidden; aspect-ratio: 4/3; }
+.lp-ba-item img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.lp-ba-label {
+  position: absolute; top: 12px; left: 12px;
+  font-size: 0.75rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase;
+  padding: 4px 12px; border-radius: 100px; color: #fff;
+}
+.lp-ba-label--before { background: #DC2626; }
+.lp-ba-label--after { background: #16A34A; }
+.lp-ba-callout {
+  background: #106172; color: #fff;
+  border-radius: 16px; padding: 28px 32px;
+  margin-bottom: 32px; text-align: center;
+}
+.lp-ba-callout p { font-size: 1.0625rem; line-height: 1.65; margin: 0; opacity: 0.95; }
+.lp-ba-callout strong { font-weight: 800; }
+@media (max-width: 520px) {
+  .lp-ba-grid { grid-template-columns: 1fr; }
+  .lp-ba-callout { padding: 22px 20px; }
+}
+
 /* ── AREAS ── */
 .lp-pills { display: flex; flex-wrap: wrap; gap: 10px; }
 .lp-pill {
@@ -530,7 +553,42 @@ img { max-width: 100%; display: block; }
   </div>
 </section>
 
-<!-- SECTION 6: AREAS -->
+<!-- SECTION 6: BEFORE / AFTER -->
+<section class="lp-section lp-section-white">
+  <div class="lp-container">
+    <div class="lp-section-label">Real Results</div>
+    <h2 class="lp-h2">See What We Remove From Your Tank</h2>
+    <div class="lp-ba-callout">
+      <p>Tanks that haven't been cleaned in 6–12 months accumulate <strong>sludge, biofilm, algae and harmful bacteria</strong>. The photos below are from real jobs in Kottayam — this is what your family may be drinking.</p>
+    </div>
+    <div class="lp-ba-grid">
+      <div class="lp-ba-item">
+        <img src="/public/tank%20before%201.JPG" alt="Water tank before cleaning — sludge and sediment buildup" loading="lazy" width="600" height="450">
+        <span class="lp-ba-label lp-ba-label--before">Before</span>
+      </div>
+      <div class="lp-ba-item">
+        <img src="/public/tank%20after%201.JPG" alt="Water tank after professional cleaning — Clean Warks Kottayam" loading="lazy" width="600" height="450">
+        <span class="lp-ba-label lp-ba-label--after">After</span>
+      </div>
+      <div class="lp-ba-item">
+        <img src="/public/tank%20before%202.JPG" alt="Another water tank before cleaning — algae and contamination" loading="lazy" width="600" height="450">
+        <span class="lp-ba-label lp-ba-label--before">Before</span>
+      </div>
+      <div class="lp-ba-item">
+        <img src="/public/tank%20after%202.JPG" alt="Water tank fully cleaned and sanitised — Clean Warks" loading="lazy" width="600" height="450">
+        <span class="lp-ba-label lp-ba-label--after">After</span>
+      </div>
+    </div>
+    <div style="text-align:center;">
+      <a href="https://wa.me/918304000046?text=Hi%2C%20I%20want%20to%20book%20water%20tank%20cleaning%20in%20Kottayam." class="lp-cta-primary" style="display:inline-flex;align-items:center;gap:10px;padding:16px 32px;font-size:1.0625rem;font-weight:700;border-radius:100px;background:#FFDC1D;color:#1a1f2e;text-decoration:none;border:none;">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.528 5.855L.057 23.57a.5.5 0 0 0 .613.612l5.771-1.463A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.012-1.374l-.36-.214-3.724.945.982-3.63-.235-.374A9.818 9.818 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+        Book a Tank Clean — WhatsApp Now
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 8: AREAS -->
 <section class="lp-section lp-section-white">
   <div class="lp-container">
     <div class="lp-section-label">Service Area</div>
@@ -561,7 +619,7 @@ img { max-width: 100%; display: block; }
   </div>
 </section>
 
-<!-- SECTION 7: FAQ -->
+<!-- SECTION 9: FAQ -->
 <section class="lp-section lp-section-cream">
   <div class="lp-container">
     <div class="lp-section-label">FAQ</div>
@@ -587,7 +645,7 @@ img { max-width: 100%; display: block; }
   </div>
 </section>
 
-<!-- SECTION 8: FINAL CTA -->
+<!-- SECTION 10: FINAL CTA -->
 <section class="lp-section lp-section-teal">
   <div class="lp-container">
     <div class="lp-section-label">Book Today</div>
